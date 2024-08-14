@@ -26,6 +26,8 @@ header {
 header h1 {
     text-align: center;
     margin: 0;
+    font-size: 1.8em;
+    /* Adjusted font size for better appearance */
 }
 
 nav ul {
@@ -46,8 +48,39 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #45a049;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.floating-btn i {
+    font-size: 20px;
+}
+
 nav ul li a:hover {
     color: #333;
+}
+
+nav ul li a.active {
+    color: #000;
 }
 
 .hero {
@@ -58,16 +91,19 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    padding: 20px;
+    /* Adjusted padding */
     margin-top: 60px;
 }
 
 .hero h2 {
-    font-size: 3em;
+    font-size: 2.5em;
+    /* Adjusted font size */
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     max-width: 600px;
 }
 
@@ -123,6 +159,78 @@ section img.responsive-img {
     transform: translateY(-5px);
 }
 
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.contact .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact .section-title {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact .form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.contact .form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact .btn-submit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.contact .btn-submit:hover {
+    background-color: #45a049;
+}
+
 footer {
     background: #333;
     color: #fff;
@@ -148,6 +256,8 @@ footer .social a:hover {
     font-size: 1.1em;
 }
 
+/* Media Queries for responsive design */
+
 @media (max-width: 768px) {
     .hero h2 {
         font-size: 2em;
@@ -157,11 +267,52 @@ footer .social a:hover {
         font-size: 1em;
     }
 
-    .nav ul {
+    nav ul {
         flex-direction: column;
     }
 
-    .nav ul li {
+    nav ul li {
         margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .contact .form-group input,
+    .contact .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    footer .social a {
+        font-size: 1em;
+    }
+
+    .floating-btn {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }

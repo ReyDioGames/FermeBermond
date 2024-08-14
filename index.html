@@ -13,28 +13,30 @@
     <header>
         <div class="container">
             <h1>La Ferme Bermond</h1>
-            <nav>
+
+            <nav class="nav">
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#histoire">Histoire</a></li>
-                    <li><a href="#assiete">De la Terre a l'Assiete</a></li>
+                    <li><a href="#assiete">De la Terre à l'Assiette</a></li>
                     <li><a href="#fonctionnement">Fonctionnement</a></li>
-                    <li><a href="#activites">Activités et Produits</a></li>
-                    <li><a href="#but">Buts et Projets</a></li>
+                    <li><a href="#activites">Activités & Produits</a></li>
+                    <li><a href="#but">Buts & Projets</a></li>
                     <li><a href="#equipe">Équipe</a></li>
                     <li><a href="#partenaires">Partenaires</a></li>
-                    <li><a href="#visites">Visiter</a></li>
+                    <li><a href="#visite">Visite</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
 
     <main>
         <section id="accueil" class="hero">
             <div class="container">
                 <h2>Bienvenue à La Ferme Bermond</h2>
                 <p>Premier espace social et écocitoyen au cœur de Nice, dédié à l'éducation et à la durabilité.</p>
-                <a href="#visites" class="btn">Planifiez votre visite</a>
+                <a href="#visite" class="btn">Planifiez votre visite</a>
             </div>
         </section>
 
@@ -46,6 +48,23 @@
                 <p>En 2017, la ferme devient une association sous le nom de "La Ferme Bermond - les amis de Vincent".
                 </p>
                 <img src="images/histoire.jpg" alt="Ferme historique" class="responsive-img">
+            </div>
+        </section>
+
+        <section id="assiete">
+            <div class="container">
+                <h2>De La Terre A L'Assiete</h2>
+                <p>section de la terre a l'assiete</p>
+                <img src="images/fonctionnement.jpg" alt="Fonctionnement" class="responsive-img">
+            </div>
+        </section>
+
+        <section id="fonctionnement">
+            <div class="container">
+                <h2>Fonctionnement de la Ferme</h2>
+                <p>La ferme est gérée par des bénévoles passionnés et des adhérents qui s'engagent pour le bien-être de
+                    tous. Nous valorisons le travail communautaire et la coopération.</p>
+                <img src="images/fonctionnement.jpg" alt="Fonctionnement" class="responsive-img">
             </div>
         </section>
 
@@ -72,11 +91,10 @@
             </div>
         </section>
 
-        <section id="fonctionnement">
+        <section id="but">
             <div class="container">
-                <h2>Fonctionnement de la Ferme</h2>
-                <p>La ferme est gérée par des bénévoles passionnés et des adhérents qui s'engagent pour le bien-être de
-                    tous. Nous valorisons le travail communautaire et la coopération.</p>
+                <h2>Buts et Projets</h2>
+                <p>le but de la ferme ICI</p>
                 <img src="images/fonctionnement.jpg" alt="Fonctionnement" class="responsive-img">
             </div>
         </section>
@@ -109,47 +127,49 @@
             </div>
         </section>
 
-        <section id="visites">
-            <div class="container">
-                <h2>Visiter la Ferme</h2>
-                <p>Planifiez votre visite et découvrez nos programmes et activités éducatives pour tous les âges.</p>
-                <div class="visit-info">
-                    <p><strong>Horaires :</strong> Lundi - Vendredi : 9h - 18h</p>
-                    <p><strong>Adresse :</strong> 4 Bd Paul Montel, 06200 Nice</p>
-                </div>
-                <a href="#contact" class="btn">Contactez-nous</a>
-            </div>
-        </section>
-        <section id="contact" class="contact">
+        <section id="visite" class="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Contact</h2>
-                    <p>Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un message directement ci-dessous.</p>
+                    <h2 class="section-title">Visiter la Ferme</h2>
+                    <div class="visit-info">
+                        <p><strong>Horaires :</strong> Lundi - Vendredi : 9h - 18h</p>
+                        <p><strong>Adresse :</strong> 4 Bd Paul Montel, 06200 Nice</p>
+                    </div>
+                    <p>Pour nous contacter, envoyez-nous un message directement ci-dessous.</p>
                 </div>
 
                 <form action="https://formsubmit.co/contact@lafermebermond.com" method="POST" class="form">
-
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_next"
                         value="https://dgeo-dev.github.io/formation-youtube-html-cs-js/thanks.html">
 
-                    <label for="firstname">
+                    <div class="form-group">
+                        <label for="firstname">Nom</label>
                         <input type="text" name="firstname" id="firstname" placeholder="Nom" required>
-                    </label>
-                    <label for="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Prénom</label>
                         <input type="text" name="lastname" id="lastname" placeholder="Prénom">
-                    </label>
-                    <label for="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Email" required>
-                    </label>
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
-                    <input type="submit" class="btn" value="Envoyer">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" class="btn-submit" value="Envoyer">
                 </form>
             </div>
-
         </section>
+
     </main>
+
+    <a href="https://www.okpal.com/la-ferme-bemond/#/" class="floating-btn" target="_blank">
+        FAIRE UN DON
+    </a>
 
     <footer>
         <div class="container">
@@ -162,6 +182,7 @@
         </div>
     </footer>
     <script src="scripts.js"></script>
+
 </body>
 
 </html>
