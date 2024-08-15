@@ -11,19 +11,19 @@ body {
 
 @keyframes slideImages {
     0% {
-        background-image: url('images/background1.jpg');
+        background-image: url('images/Background1.jpg');
     }
 
     33% {
-        background-image: url('images/background2.jpg');
+        background-image: url('images/Background2.jpg');
     }
 
     67% {
-        background-image: url('images/background3.jpg');
+        background-image: url('images/Background3.jpg');
     }
 
     100% {
-        background-image: url('images/background1.jpg');
+        background-image: url('images/Background1.jpg');
     }
 }
 
