@@ -7,13 +7,25 @@
     <title>La Ferme Bermond</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Ajoutez ce CSS pour les effets de transition de visibilité */
+        section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
             <h1>La Ferme Bermond</h1>
-
             <nav class="nav">
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
@@ -30,102 +42,300 @@
         </div>
     </header>
 
-
     <main>
         <section id="accueil" class="hero">
             <div class="container">
                 <h2>Bienvenue à La Ferme Bermond</h2>
-                <p>Premier espace social et écocitoyen au cœur de Nice, dédié à l'éducation et à la durabilité.</p>
+                <h4>Premier espace social et écocitoyen au cœur de Nice, dédié à l'éducation et à la durabilité.</h4>
                 <a href="#visite" class="btn">Planifiez votre visite</a>
             </div>
         </section>
 
-        <section id="histoire">
-            <div class="container">
-                <h2>Histoire de la Ferme</h2>
-                <p>Créée en 1969, la Ferme Bermond a évolué d'une exploitation agricole traditionnelle à un acteur clé
-                    de la communauté locale, intégrant des pratiques durables et éducatives.</p>
-                <p>En 2017, la ferme devient une association sous le nom de "La Ferme Bermond - les amis de Vincent".
-                </p>
-                <img src="images/histoire.jpg" alt="Ferme historique" class="responsive-img">
-            </div>
-        </section>
 
-        <section id="assiete">
+        <section id="histoire" class="content-box">
             <div class="container">
-                <h2>De La Terre A L'Assiete</h2>
-                <p>section de la terre a l'assiete</p>
-                <img src="images/fonctionnement.jpg" alt="Fonctionnement" class="responsive-img">
-            </div>
-        </section>
-
-        <section id="fonctionnement">
-            <div class="container">
-                <h2>Fonctionnement de la Ferme</h2>
-                <p>La ferme est gérée par des bénévoles passionnés et des adhérents qui s'engagent pour le bien-être de
-                    tous. Nous valorisons le travail communautaire et la coopération.</p>
-                <img src="images/fonctionnement.jpg" alt="Fonctionnement" class="responsive-img">
-            </div>
-        </section>
-
-        <section id="activites">
-            <div class="container">
-                <h2>Nos Activités et Produits</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Le Potager</h3>
-                        <p>Découvrez nos pratiques agricoles et participez à la culture de nos produits frais.</p>
-                        <img src="images/potager.jpg" alt="Potager" class="responsive-img">
+                <div class="cardG">
+                    <div>
+                        <h3>HISTOIRE D’HIER…</h3>
+                        <p class="text">Créée en 1969, la ferme Bermond signe le début
+                            d’une belle aventure. Son créateur, Vincent Bermond,
+                            brigadier-chef de la police municipale de Nice,
+                            fut sollicité par la Mairie afin de participer au projet de
+                            création d’une brigade équestre.
+                            Avec un groupe d’amis, une idée émerge
+                            progressivement : développer et transformer
+                            ce terrain mis à disposition pour accueillir
+                            les chevaux. Un petit potager et un lieu d’accueil
+                            pour divers animaux voient le jour, pour le plus grand
+                            plaisir des habitants du quartier !
+                            À la disparition de Vincent, ses amis prirent le relais
+                            afin de poursuivre son action, avec le désir profond
+                            de réfléchir et d’agir en collectif avec ce but commun :
+                            tous agir pour demain !</p>
                     </div>
-                    <div class="card">
-                        <h3>Ateliers Éducatifs</h3>
-                        <p>Participez à nos ateliers pour apprendre l'agroforesterie et la cuisine antigaspi.</p>
-                        <img src="images/ateliers.jpg" alt="Ateliers" class="responsive-img">
-                    </div>
-                    <div class="card">
-                        <h3>Visites Guidées</h3>
-                        <p>Profitez d'une visite guidée pour découvrir nos activités et nos projets.</p>
-                        <img src="images/visites.jpg" alt="Visites" class="responsive-img">
+                    <img src="images/histoire.jpg" alt="HISTOIRE D’HIER…" class="responsive-img">
+                </div>
+
+
+                <div class="cardG">
+
+                    <img src="images/Aujourd'hui.png" alt="… ET D’AUJOURD’HUI" class="responsive-img">
+
+                    <div>
+                        <h3>… ET D’AUJOURD’HUI</h3>
+                        <p class="text">En 2017 la structure prend forme associative
+                            et renaît sous son appellation actuelle
+                            « La Ferme Bermond - les amis de Vincent ».
+                            Ainsi la ferme se développe progressivement avec
+                            un collectif de bénévoles, d’aides de financeurs
+                            publics et privés. Grâce à toutes ces bonnes volontés
+                            elle développe des valeurs éducatives, de partage,
+                            d’entraide et de transmission.<br> <br>
+
+                            2020-2024 c’est la rénovation globale de la ferme
+                            dans le cadre d’un programme gouvernemental
+                            « France Relance » avec les partenariats de la Ville,
+                            de la Métropole de Nice et de la Région Sud auxquels
+                            sont venus s’agréger l’aide des fondations de Nice,
+                            Vinci et Aéroports de la Côte d’Azur :
+                            cuisine participative et espace de formation, locaux
+                            administratifs, enceinte et infrastructure d’accès,
+                            enclos principaux, panneaux photovoltaïques, volière,
+                            bassins, serre, outillage…<br> <br>
+
+                            Toutes ces rénovations ont été faites sous forme de
+                            chantiers d’insertion et avec une forte implication des
+                            bénévoles de l’association ainsi qu’avec des stages
+                            pré apprentissage maison « P.A.M ».</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="but">
+        <section id="assiete" class="content-box">
             <div class="container">
-                <h2>Buts et Projets</h2>
-                <p>le but de la ferme ICI</p>
-                <img src="images/fonctionnement.jpg" alt="Fonctionnement" class="responsive-img">
-            </div>
-        </section>
-
-        <section id="equipe">
-            <div class="container">
-                <h2>Équipe</h2>
-                <p>Rencontrez les membres dévoués qui font vivre la ferme et ses projets communautaires.</p>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Vincent Bermond</h3>
-                        <p>Fondateur et gestionnaire principal de la ferme.</p>
-                        <img src="images/vincent.jpg" alt="Vincent Bermond" class="responsive-img">
+                <div class="cardG">
+                    <div>
+                        <h3>DE LA TERRE À L’ASSIETTE</h3>
+                        <h4>une nouvelle dimension de nos actions</h4>
+                        <p class="text">2023 : obtention de deux postes salariés à temps plein
+                            financés par l’Etat dans le cadre d’une médiation
+                            socio culturelle afin d’animer les activités éducatives
+                            autour du maraîchage en agroforesterie, ainsi que
+                            pour la transformation des produits de la ferme,
+                            avec une cuisine solidaire et antigaspi.
+                            Ainsi, adhérents, stagiaires et groupes, accueillis
+                            participent aux activités :
+                            - de jardinage en fonction des saisons :
+                            semis, plantation, désherbage, récolte…
+                            et découvrent les pratiques liées à l’agriculture en
+                            milieu urbain, à l’agroforesterie et à la gestion des
+                            ressources ;
+                            - d’apprentissage de la cuisine en conditionnant
+                            et en transformant une partie de la production
+                            du potager ainsi que les denrées invendues
+                            de nos partenaires dans une démarche antigaspi
+                            qui s’inscrit dans une logique d’alimentation saine,
+                            locale et solidaire.</p>
                     </div>
-                    <div class="card">
-                        <h3>Équipe Bénévole</h3>
-                        <p>Nos bénévoles travaillent dur pour maintenir la ferme florissante.</p>
-                        <img src="images/benevoles.jpg" alt="Équipe bénévole" class="responsive-img">
-                    </div>
+                    <img src="images/assiete.JPG" alt="DE LA TERRE À L’ASSIETTE" class="responsive-img">
                 </div>
             </div>
         </section>
 
-        <section id="partenaires">
+        <section id="fonctionnement" class="content-box">
             <div class="container">
-                <h2>Partenaires</h2>
-                <p>Nous collaborons avec des partenaires locaux pour soutenir nos initiatives et élargir notre impact.
-                    Leur soutien est essentiel pour le développement durable de nos projets.</p>
-                <img src="images/partenaires.jpg" alt="Partenaires" class="responsive-img">
+                <div class="cardG">
+
+                    <img src="images/fonctionnement.jpg" alt="Potager" class="responsive-img">
+                    <div>
+                        <h3>FONCTIONNEMENT</h3>
+                        <p>La ferme Bermond est une ferme urbaine pédagogique ouverte à tous les publics qui
+                            veulent venir visiter les lieux pour rencontrer les animaux et découvrir les produits issus
+                            de l’exploitation.
+                            Le concept s’est monté autour des notions de développement du lien social et du vivre
+                            ensemble
+                            qui nous semble indispensables pour faire société. Parallèlement à cela la vie de la
+                            structure tourne autour de la masse de travail nécessaire à son fonctionnement et au
+                            développement
+                            constant de nos projets.
+                            L’adhésion est donc gratuite en échange d’une quantité minimale de temps de travail que
+                            les adhérents bénévoles (membres actifs) s’engagent à effectuer. En retour la ferme leur
+                            permet de pouvoir profiter de ses productions maraichères (fruits, légumes et oeufs) en
+                            contrepartie d’une participation financière votée chaque année lors de l’assemblée générale
+                            (cette participation n’est qu’indicative et chacun fait en fonction de ses moyens).
+                            Nous avons également créé il y a deux ans un second type d’adhésion pour des gens qui
+                            souhaitaient soutenir notre action mais qui ne pouvaient pas s’impliquer physiquement.
+                            Ces membres bienfaiteurs s’acquittent d’une cotisation de 15 € sans contrepartie et peuvent
+                            prétendre avoir accès aux surplus de productions non partagés entre les membres actifs.
+                            Des partenariats avec divers commerçants et grossistes de la région, notamment le Maché
+                            d’Intérêt National (MIN), afin de récupérer les denrées invendues et de les transformer
+                            dans une démarche antigaspi, de nourriture pour les animaux et de compost.
+                            La récupération des broyas d’entreprises d’élagage pour le paillage des enclos et zones de
+                            culture. Ce broya permet également une grande économie d’eau en évitant l’évaporation
+                            des parcelles cultivées, l’apport de carbone et la couverture du sol.
+                            CAGNOT</p>
+                    </div>
+
+                </div>
+
+                <div class="cardG">
+                    <div>
+                        <h3>LA FERME EN CHIFFRES</h3>
+                        <p>En 2023 :
+                            4 515 visiteurs dont 85%
+                            sont des habitants du QPV
+                            des Moulins et des Sagnes.
+                            17 stagiaires, 5 services
+                            civiques et 3 000 scolaires.
+                            Parmi eux plus de 130 sont
+                            adhérents de l’association.
+                            Le dispositif départemental
+                            « Jeune Engagé pour le
+                            Climat » permet à de nombreux
+                            jeunes âgés de 18 ans à 24 ans,
+                            de venir effectuer 50 heures de
+                            bénévolat.
+                            Environ 3 Kgs de légumes
+                            récoltés au m2 de surface cultivable,
+                            200 animaux élevés, accueillis
+                            et soignés, dont
+                            une soixantaine de poules
+                            pondeuses.
+                            Nos ateliers participatifs
+                            et pré apprentissage maison
+                            « alimentation locale,
+                            saine et solidaire », au cours
+                            desquels ont été servis
+                            175 repas participatifs et 1 340
+                            repas solidaires et bénévoles. <br><br>
+                            En 2024 : 1 500 m2 de terrain
+                            supplémentaire avec une
+                            trentaine de fruitiers plantés
+                            et un maraîchage plein champs
+                            en agroforesterie.</p>
+                    </div>
+                    <img src="images/chiffre.JPG" alt="Potager" class="responsive-img">
+                </div>
             </div>
         </section>
+
+        <section id="activites" class="content-box">
+            <div class="container">
+                <div class="cardPlus">
+                    <h2 class="custom-h2Plus">Nos Activités et Produits</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Le Potager</h3>
+                            <p>Découvrez nos pratiques agricoles et participez à la culture de nos produits frais.</p>
+                            <img src="images/potager.jpg" alt="Potager" class="responsive-img">
+                        </div>
+                        <div class="card">
+                            <h3>Ateliers Éducatifs</h3>
+                            <p>Participez à nos ateliers pour apprendre l'agroforesterie et la cuisine antigaspi.</p>
+                            <img src="images/ateliers.jpg" alt="Ateliers" class="responsive-img">
+                        </div>
+                        <div class="card">
+                            <h3>Visites Guidées</h3>
+                            <p>Profitez d'une visite guidée pour découvrir nos activités et nos projets.</p>
+                            <img src="images/visites.jpg" alt="Visites" class="responsive-img">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="but" class="content-box">
+            <div class="container">
+                <div class="cardPlusBlanc">
+                    <h2>BUTS ET PROJETS</h2>
+                    <div class="grid">
+                        <div class="petiteCard">
+                            <h3>but 1</h3>
+                            <p>notre premier but est ...</p>
+                            <img src="images/but1.JPG" alt="Potager" class="responsive-img">
+                        </div>
+                        <div class="petiteCard">
+                            <h3>but 2</h3>
+                            <p>notre deuxieme but est ....</p>
+                            <img src="images/but2.JPG" alt="Ateliers" class="responsive-img">
+                        </div>
+                        <div class="petiteCard">
+                            <h3>Projet 1</h3>
+                            <p>notre premier projet est ...</p>
+                            <img src="images/projet.JPG" alt="Visites" class="responsive-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="content-box">
+            <div class="container">
+
+                <div class="cardPlus">
+                    <h2 class="custom-h2Plus">Équipe</h2>
+                    <h3 class="custom-h3Plus">Rencontrez les membres dévoués qui font vivre la ferme et ses projets
+                        communautaires.</h3>
+                    <div class="grid">
+                        <div class="card">
+
+                            <img src="images/steph.JPG" alt="STÉPH" class="responsive-img">
+                            <h3>STÉPH</h3>
+                            <h4>LE BIG BOSS</h4>
+                        </div>
+                        <div class="card">
+
+                            <img src="images/lulu.JPG" alt="LULU" class="responsive-img">
+                            <h3>DAME LULU</h3>
+                            <h4>BRIN D’ACIER</h4>
+                        </div>
+                        <div class="card">
+
+                            <img src="images/nico.JPG" alt="NICO" class="responsive-img">
+                            <h3>NICO</h3>
+                            <h4>LA POÊLE À FRIRE</h4>
+                        </div>
+                        <div class="card">
+
+                            <img src="images/eric.JPG" alt="ÉRIC" class="responsive-img">
+                            <h3>ÉRIC</h3>
+                            <h4>LE LÉGUME À VARIER</h4>
+                        </div>
+                        <div class="card">
+
+                            <img src="images/laura.JPG" alt="LAURA" class="responsive-img">
+                            <h3>LAURA</h3>
+                            <h4>LA PÂQUERETTE JOVIALE</h4>
+                        </div>
+                        <div class="card">
+
+                            <img src="images/malou.JPG" alt="MALOU" class="responsive-img">
+                            <h3>MALOU</h3>
+                            <h4>LE COEUR D’ARTICHAUT</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="partenaires" class="content-box">
+            <div class="container">
+                <div class="petiteCard">
+                    <h2>Partenaires</h2>
+                    <h4>Nous collaborons avec des partenaires locaux pour soutenir nos initiatives et élargir notre
+                        impact. Leur soutien est essentiel pour le développement durable de nos projets.</h4>
+                    <img src="images/partenaires.jpg" alt="Partenaires" class="responsive-img">
+                </div>
+
+            </div>
+        </section>
+
 
         <section id="visite" class="contact">
             <div class="container">
@@ -164,7 +374,6 @@
                 </form>
             </div>
         </section>
-
     </main>
 
     <a href="https://www.okpal.com/la-ferme-bemond/#/" class="floating-btn" target="_blank">
@@ -174,15 +383,17 @@
     <footer>
         <div class="container">
             <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/lafermebermond" target="_blank">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/channel/UCjIxEYve57O7RGvJxjgMUSw" target="_blank">
+                    <i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/la_ferme_bermond/" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
             </div>
             <p>&copy; 2024 La Ferme Bermond - Nice. Tous droits réservés.</p>
         </div>
     </footer>
     <script src="scripts.js"></script>
-
 </body>
 
 </html>
