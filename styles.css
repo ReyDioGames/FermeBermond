@@ -27,6 +27,95 @@ body {
     }
 }
 
+/* Style de base pour la navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Cacher le menu burger sur les grands écrans */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.burger div {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Styles pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #4CAF50;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* Animation du menu burger */
+.nav-active {
+    transform: translateX(0%);
+}
+
+.nav-active li {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 0.2s;
+}
+
+/* Animation pour le burger */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 body::before {
     content: '';
     position: fixed;
@@ -137,31 +226,48 @@ nav ul li a.active {
     color: #000;
 }
 
-.floating-btn {
+.floating-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    text-align: center;
+    z-index: 1001;
+}
+
+.floating-logo img {
+    width: 100%;
+    /* Le logo prendra toute la largeur du bouton */
+    max-width: 150px;
+    /* Limite la largeur du logo, ajustez selon vos besoins */
+    margin-bottom: 10px;
+    /* Espace entre le logo et le bouton */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.floating-logo img:hover {
+    transform: scale(1.05);
+}
+
+.floating-btn {
     background-color: #4CAF50;
     color: #fff;
     padding: 12px 25px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1001;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: block;
+    /* Pour que le bouton prenne toute la largeur du conteneur */
 }
 
 .floating-btn:hover {
     background-color: #45a049;
     color: #000;
     transform: scale(1.05);
-}
-
-.floating-btn i {
-    font-size: 20px;
 }
 
 .hero {
