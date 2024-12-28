@@ -4,7 +4,7 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #000000;
     overflow-x: hidden;
     position: relative;
 }
@@ -271,14 +271,14 @@ nav ul li a.active {
 }
 
 .hero {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 80vh;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    
     margin-top: 60px;
 }
 
