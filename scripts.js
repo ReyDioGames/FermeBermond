@@ -65,3 +65,32 @@ burger.addEventListener('click', () => {
     // Animation du burger
     burger.classList.toggle('toggle');
 });
+
+
+function changeImage(imageSrc) {
+    document.getElementById("mainImage1").style.opacity = "0"; // Effet de fade-out
+
+    setTimeout(() => {
+        document.getElementById("mainImage1").src = imageSrc;
+        document.getElementById("mainImage1").style.opacity = "1"; // Effet de fade-in
+    }, 300); // Changement après l'animation
+}
+
+function changeImage2(imageSrc) {
+    document.getElementById("mainImage2").style.opacity = "0"; // Effet de fade-out
+
+    setTimeout(() => {
+        document.getElementById("mainImage2").src = imageSrc;
+        document.getElementById("mainImage2").style.opacity = "1"; // Effet de fade-in
+    }, 300); // Changement après l'animation
+}
+
+function changeImage3(imageSrc) {
+    document.getElementById("mainImage3").style.opacity = "0"; // Effet de fade-out
+
+    setTimeout(() => {
+        document.getElementById("mainImage3").src = imageSrc;
+        document.getElementById("mainImage3").style.opacity = "1"; // Effet de fade-in
+    }, 300); // Changement après l'animation
+}
+

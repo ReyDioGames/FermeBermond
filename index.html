@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Ferme Bermond</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="ImageTravaillé/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Ajoutez ce CSS pour les effets de transition de visibilité */
@@ -25,7 +26,12 @@
 <body>
     <header>
         <div class="container">
-            <h1>La Ferme Bermond</h1>
+            
+            <div class="logo-titre">
+                <h1>La Ferme Bermond</h1>
+                
+            </div>
+                
             <nav class="nav">
                 <ul class="nav-links">
                     <li><a href="#accueil">Accueil</a></li>
@@ -63,41 +69,75 @@
                 <div class="cardG">
                     <div>
                         <h3>HISTOIRE D’HIER…</h3>
-                        <p class="text">Créée en 1969, la ferme Bermond signe le début
-                            d’une belle aventure. Son créateur, Vincent Bermond,
-                            brigadier-chef de la police municipale de Nice,
-                            fut sollicité par la Mairie afin de participer au projet de
-                            création d’une brigade équestre.<br><br>
-                            Avec un groupe d’amis, une idée émerge
-                            progressivement : développer et transformer
-                            ce terrain mis à disposition pour accueillir
-                            les chevaux. Un petit potager et un lieu d’accueil
-                            pour divers animaux voient le jour, pour le plus grand
-                            plaisir des habitants du quartier !<br><br>
-                            À la disparition de Vincent, ses amis prirent le relais
-                            afin de poursuivre son action, avec le désir profond
-                            de réfléchir et d’agir en collectif avec ce but commun :
+                        <p class="text">Née en 1969, la ferme Bermond signe le début  
+                            d’une belle aventure. Son créateur, Vincent Bermond, 
+                            brigadier-chef de la police municipale de Nice,  
+                            fut sollicité par la Mairie afin de participer au projet 
+                            de création d’une brigade équestre. </br></br>
+                             Avec un groupe d’amis, une idée émerge  
+                            progressivement : développer et transformer  
+                            ce terrain mis à disposition pour accueillir 
+                            les chevaux. Un petit potager et un lieu d’accueil  
+                            pour divers animaux voient le jour, pour le plus grand  
+                            plaisir des habitants du quartier !</br></br>
+                             À la disparition de Vincent, ses amis prirent le relais 
+                            afin de poursuivre son action, avec le désir profond 
+                            de réfléchir et d’agir en collectif avec ce but commun : 
                             tous agir pour demain !</p>
                     </div>
-                    <img src="images/histoire.jpg" alt="HISTOIRE D’HIER…" class="responsive-img">
+                    <img src="images/6.png" alt="HISTOIRE D’HIER…" class="responsive-img">
                 </div>
 
 
-                <div class="cardG">
-
-                    <img src="images/Aujourd'hui.png" alt="… ET D’AUJOURD’HUI" class="responsive-img">
-
+                <div class="cardD">
+                    
+                    
                     <div>
-                        <h3>… ET D’AUJOURD’HUI</h3>
-                        <p class="text">En 2017 la structure prend forme associative
-                            et renaît sous son appellation actuelle
-                            « La Ferme Bermond - les amis de Vincent ».<br>
-                            Ainsi la ferme se développe progressivement avec
-                            un collectif de bénévoles, d’aides de financeurs
-                            publics et privés. Grâce à toutes ces bonnes volontés
-                            elle développe des valeurs éducatives, de partage,
-                            d’entraide et de transmission.<br> <br>
 
+                        <!-- 📌 Image principale -->
+                        <div class="image-container">
+                            <img id="mainImage1" src="ImageTravaillé/L’ATELIER.png" alt="Image principale" class="responsive-img80">
+                        </div>
+            
+                        <!-- 📌 Miniatures pour changer d’image -->
+                        <div class="thumbnails">
+                            <img src="ImageTravaillé/L’ATELIER.png" class="thumb" onclick="changeImage('ImageTravaillé/L’ATELIER.png')">
+                            <img src="ImageTravaillé/LE BUNGALOW.png" class="thumb" onclick="changeImage('ImageTravaillé/LE BUNGALOW.png')">
+                            <img src="ImageTravaillé/LE GRAND POULAILLER.png" class="thumb" onclick="changeImage('ImageTravaillé/LE GRAND POULAILLER.png')">
+                        </div>
+                        
+
+                    </div>
+
+                    <!-- 📌 Texte à droite -->
+                    <div class="text-container">
+                        <h3>… ET D’AUJOURD’HUI</h3>
+                        <p class="text">
+                            En 2017, la structure prend une forme associative  
+                            et renaît sous son appellation actuelle  
+                            « La Ferme Bermond - les amis de Vincent ».<br>
+                            Elle se développe progressivement avec un collectif de bénévoles,
+                            d’aides de financeurs publics et privés. Grâce à ces efforts, elle promeut
+                            des valeurs éducatives, de partage et de transmission.
+                        </p>
+
+                        
+                    </div>
+
+
+                    
+                </div>
+                
+                
+                
+                <div class="cardD">
+
+                    
+                    
+                    <!-- 📌 Texte à droite -->
+                    <div class="text-container">
+                        
+                        <p class="text">
                             2020-2024 c’est la rénovation globale de la ferme
                             dans le cadre d’un programme gouvernemental
                             « France Relance » avec les partenariats de la Ville,
@@ -108,13 +148,70 @@
                             administratifs, enceinte et infrastructure d’accès,
                             enclos principaux, panneaux photovoltaïques, volière,
                             bassins, serre, outillage…<br> <br>
+                        </p>
 
+                        
+                    </div>
+
+                    <div>
+
+                        <!-- 📌 Image principale -->
+                        <div class="image-container">
+                            <img id="mainImage2" src="ImageTravaillé/LES BACS DE CULTURE.png" alt="Image principale" class="responsive-img80">
+                        </div>
+            
+                        <!-- 📌 Miniatures pour changer d’image -->
+                        <div class="thumbnails">
+                            <img src="ImageTravaillé/LES BACS DE CULTURE.png" class="thumb" onclick="changeImage2('ImageTravaillé/LES BACS DE CULTURE.png')">
+                            <img src="ImageTravaillé/L’ENCEINTE.png" class="thumb" onclick="changeImage2('ImageTravaillé/L’ENCEINTE.png')">
+                            <img src="ImageTravaillé/L’ACCÈS.png" class="thumb" onclick="changeImage2('ImageTravaillé/L’ACCÈS.png')">
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+
+                <div class="cardD">
+                    
+                   
+
+                    <div>
+
+                        <!-- 📌 Image principale -->
+                        <div class="image-container">
+                            <img id="mainImage3" src="ImageTravaillé/BASSIN.png" alt="Image principale" class="responsive-img80">
+                        </div>
+            
+                        <!-- 📌 Miniatures pour changer d’image -->
+                        <div class="thumbnails">
+                            <img src="ImageTravaillé/BASSIN.png" class="thumb" onclick="changeImage3('ImageTravaillé/BASSIN.png')">
+                            <img src="ImageTravaillé/LA SERRE.png" class="thumb" onclick="changeImage3('ImageTravaillé/LA SERRE.png')">
+                            <img src="ImageTravaillé/LA VOLIÈRE.png" class="thumb" onclick="changeImage3('ImageTravaillé/LA VOLIÈRE.png')">
+                        </div>
+                        
+                    </div>
+
+                     <!-- 📌 Texte à droite -->
+                     <div class="text-container">
+                        
+                        <p class="text">
                             Toutes ces rénovations ont été faites sous forme de
                             chantiers d’insertion et avec une forte implication des
                             bénévoles de l’association ainsi qu’avec des stages
-                            pré apprentissage maison « P.A.M ».</p>
+                            pré apprentissage maison « P.A.M ».
+                        </p>
+
+                        
                     </div>
-                </div>
+                    
+                </div> 
+                
+
+
+                
+
+
             </div>
         </section>
 
@@ -144,7 +241,7 @@
                             qui s’inscrit dans une logique d’alimentation saine,
                             locale et solidaire.</p>
                     </div>
-                    <img src="images/assiete.JPG" alt="DE LA TERRE À L’ASSIETTE" class="responsive-img">
+                    <img src="ImageTravaillé/1.png" alt="DE LA TERRE À L’ASSIETTE" class="responsive-img">
                 </div>
             </div>
         </section>
@@ -153,7 +250,7 @@
             <div class="container">
                 <div class="cardG">
 
-                    <img src="images/fonctionnement.jpg" alt="Potager" class="responsive-img">
+                    <img src="ImageTravaillé/2.png" alt="Potager" class="responsive-img">
                     <div>
                         <h3>FONCTIONNEMENT</h3>
                         <p>La ferme Bermond est une ferme urbaine pédagogique ouverte à tous les publics qui
@@ -223,120 +320,125 @@
                             et un maraîchage plein champs
                             en agroforesterie.</p>
                     </div>
-                    <img src="images/chiffre.JPG" alt="Potager" class="responsive-img">
+                    <img src="ImageTravaillé/3.png" alt="Potager" class="responsive-img">
                 </div>
             </div>
         </section>
 
         <section id="activites" class="content-box">
             <div class="container">
-                <div class="cardPlusBlanc">
-                    <h2>Nos Activités et Produits</h2>
-                    <div class="grid">
-                        <div class="petiteCard">
-                            <h3>Nos Activités</h3>
-                            <img src="images/visites.jpg" alt="Activités" class="responsive-img">
-                            <p>Visite de la ferme pédagogique en groupe
-                                ou en individuel, rencontre avec les animaux,
-                                découverte des produits issus de l’exploitation
-                                agricole, gestion des déchets verts, ateliers cuisine et
-                                transformation des produits, jardinage, cueillette des
-                                récoltes, soins aux animaux.
-                                La possibilité pour les gens du quartier de venir
-                                déposer leurs déchets verts sur notre zone
-                                de compostage.</p>
 
-                        </div>
-                        <div class="petiteCard">
-                            <h3>Nos Produits</h3>
-                            <img src="images/ateliers.jpg" alt="Produits" class="responsive-img">
-                            <p>En fonction des saisons et de ce que le terre nous
-                                offre, vous pourrez retrouver chez nous :
-                                tomates, aubergines, plantes aromatiques,
-                                concombres, oignons, fenouil, blettes, melons,
-                                courgettes, pâtissons, courges, piments, salades,
-                                pommes de terre, cébettes, maïs, haricots, tournesols,
-                                amarantes, nèfles, poires, cerises, kakis, figues,
-                                abricots, christophine, gombo…
-                                Nous transformons aussi nos récoltes en : confitures,
-                                gelées, sirops, sauces…
-                                Nous proposons également les oeufs de nos poules,
-                                oies, et cannes.</p>
+                <div class="cardG">
 
-                        </div>
+                    <img src="ImageTravaillé/4.png" alt="Activitées et Produits" class="responsive-img">
+                    <div>
+                        <h3>NOS ACTIVITÉS</h3>
+                            <p>Elles s’inscrivent dans l’Économie Sociale  
+                                et Solidaire du territoire. Visite de la ferme  
+                                pédagogique en groupe ou en individuel, rencontre 
+                                avec les animaux, découverte des produits issus  
+                                de l’exploitation agricole, gestion des déchets verts, 
+                                ateliers cuisine et transformation des produits,  
+                                jardinage, cueillette des récoltes, soins aux animaux.
+                                La possibilité pour les gens du quartier de venir  
+                                déposer leurs déchets verts sur notre zone  
+                                de compostage.<br>
+                            </p>
 
+                            <h3> NOS PRODUITS</h3>
+                        <p>En fonction des saisons et de ce que le terre nous 
+                            offre, vous pourrez retrouver chez nous :
+                             tomates, aubergines, plantes aromatiques, 
+                            concombres, oignons, fenouil, blettes, melons,  
+                            courgettes, pâtissons, courges, piments, salades, 
+                            pommes de terre, cébettes, maïs, haricots, tournesols, 
+                            amarantes, nèfles, poires, cerises, kakis, figues,  
+                            abricots, christophines, gombos…<br><br>
+                             Nous transformons aussi nos récoltes en :
+                             confitures, gelées, sirops, sauces… <br><br>
+                             Nous proposons également les œufs  
+                            de nos poules, oies, et canes.</p>
                     </div>
-
+                    
                 </div>
-
+                
             </div>
+
         </section>
 
         <section id="but" class="content-box">
             <div class="container">
+               
                 <div class="cardG">
-                    <img src="images/projet.JPG" alt="Buts&Projets" class="responsive-img">
+
                     <div>
                         <h3>BUT ET PROJETS</h3>
-                        <p>Être le premier espace social écocitoyen aux portes :
-                            d’un quartier populaire, d’un carrefour multi modal,
-                            d’un marché international et d’une éco-vallée futuriste
-                            à Nice Ouest.<br><br>
-                            Impulser et co-élaborer des projets novateurs liant la
-                            protection de l’environnement, le développement
-                            économique, le social, l’éducatif avec des partenaires
-                            privés et les pouvoirs publics.<br><br>
-                            Être acteur de la protection de la nature,
-                            de la biodiversité dans un secteur urbain de plus
-                            en plus minéraliser.<br><br>
-                            Sensibiliser les différents acteurs et participants
-                            autour de thèmes liés à l’écocitoyenneté,
-                            au développement durable, au bien-être et à la
-                            pédagogie. Plus particulièrement pour les enfants, car
-                            de ce contact découle la curiosité,
-                            la sensibilisation et le respect du vivant.<br><br>
-                            Transmettre des savoirs, des compétences,
-                            des valeurs humaines, éthiques, sociales et
-                            de partage. Développer et démontrer que nous
-                            pouvons prendre soin de notre environnement dans
-                            son contexte sociétal, culturel et économique.</p>
-                    </div>
+                        <p>La ferme est un lieu d’éducation populaire, créateur 
+                            de lien inter-generationnel, de mixité sociale et de  
+                            diversité culturelle. Le premier espace social écocitoyen 
+                            aux portes d’un quartier prioritaire de la ville,  
+                            d’un carrefour multi modal, d’un marché international 
+                            et de l’éco-vallée de Nice Ouest.<br>
+                             Impulser et co-élaborer des projets novateurs liant  
+                            la protection de l’environnement, le développement 
+                            économique et social, l’éducation, avec des partenaires 
+                            privés et les pouvoirs publics.<br>
+                             Être acteur de la protection de la nature,  
+                            de la biodiversité dans un secteur urbain de plus  
+                            en plus minéralisé.<br>
+                             Sensibiliser les différents acteurs et participants  
+                            autour de thèmes liés à l’écocitoyenneté,  
+                            au développement durable, au bien-être et à la  
+                            pédagogie. Plus particulièrement pour les enfants,  
+                            car de ce contact découle la curiosité, la sensibilisation 
+                            et le respect du vivant.<br>
+                             Transmettre des savoirs, des compétences, des valeurs 
+                            humaines, éthiques, sociales et de partage. Développer 
+                            et démontrer que nous pouvons prendre soin  
+                            de notre environnement dans son contexte  
+                            sociétal, culturel et économique.<br><br>
+                        
+                            Développer le bénévolat grâce aux formations inclusives des « P.A.M. » pour : <br>
+                            -  les soins quotidiens apportés aux 200 animaux de la ferme, préparation,  
+                            distribution, entretien ;<br>
+                            - le maraîchage, semis, entretien, récoltes ;-  la cuisine et la transformation des produits, préparation, service et entretien.<br>
+                            
+                            L’association - grâce au soutien des pouvoirs publics : État, Métropole, Département,
+                            Région, Ville de Nice, CAF… est créatrice d’emplois en insertion et lieu de stages. <br>
 
+                            -  Les dispositifs d’État visant l’insertion des mineurs, la Prévention Judiciaire de la 
+                            Jeunesse (PJJ) et les institutions accueillant les personnes porteuses de handicaps ;
+
+                            -  Les centres de formation pour les jeunes et les adultes (CFA horticulture / protection 
+                            de l’environnement / gestion des territoires…) et les écoles vétérinaires,<br>
+
+                            -  En développant l’accueil d’étudiant.e.s en alternance et/ou en professionnalisation, 
+                            en lycée Éducation Nationale, CFA ou à l’Université.<br><br>
+
+                            Essayer de construire et consolider progressivement un modèle économique, social  
+                            et associatif, basé sur une coopération humaine, financière et technique entre les acteurs 
+                            de l’Économie Sociale et Solidaire, du secteur privé, associations, fondations,  
+                            coopératives, centre de formation, grandes entreprises, syndics de copropriété  
+                            et pouvoirs publics. Arriver, à terme, à proposer un modèle viable et autonome avec 
+                            une autosuffisance financière, nourricière et énergétique.<br>
+
+                            Nous pouvons parler de permaculture dans son vrai sens : végétaux, minéraux  
+                            et animaux sont en complète symbiose dans un cercle vertueux.  <br>
+                            Les terrains entretenus par la ferme contribuent - modestement - à la lutte contre  
+                            le réchauffement climatique, la végétalisation en espace urbain.  
+                            Une bulle de verdure à préserver et à dupliquer ?<br>
+
+                            Viendront un centre de compostage mécanique, un séchoir et un four  
+                            solaire, un rucher, un centre d’aquaponie…<br>
+                            Des buts accessibles et motivants dans l’intérêt général.
+
+                        </p>
+                    </div>
+                    <img src="ImageTravaillé/5.png" alt="Buts&Projets" class="responsive-img">
                 </div>
 
-                <div class="cardG">
-
-                    <div>
-                        <h3>BUT ET PROJETS</h3>
-                        <p>Développer le bénévolat grâce aux formations inclusives des P.A.M pour :
-                            - les soins quotidiens apportés aux 200 animaux de la ferme, préparation,
-                            distribution, entretien ;
-                            - le maraîchage et l’agroforesterie, semi, entretien, récoltes ;
-                            - les activités de cuisine et transformation des produits, préparation ,
-                            service et entretien.
-                            Devenir site d’accueil pour l’insertion et la professionnalisation en partenariat avec :
-                            - les dispositifs d’État visant l’insertion des mineurs, la Prévention judiciaire
-                            de la jeunesse (PJJ), ainsi que les institutions accueillant les personnes porteuses de
-                            handicaps ;
-                            - les centres de formation pour les jeunes et les adultes (CFA horticulture/ protection
-                            de l’environnement / gestion des territoires …) et les écoles vétérinaires.
-                            En développant l’accueil d’étudiants/tes en alternance et/ou en professionnalisation,
-                            en lycée Éducation Nationale, CFA ou à l’université.
-                            Essayer de construire, consolider progressivement sur une décennie,
-                            un modèle économique et social associatif basé sur une coopération humaine,
-                            financière et technique entre les acteurs de l’économie sociale et solidaire,
-                            du secteur privé, associations, fondations, coopératives, Centre de formation,
-                            grandes entreprises, syndic de copropriété (…) ainsi que du secteur public
-                            (État, Région, Département, Métropole, Mairie…).
-                            Arriver à terme à proposer un model viable et autonome avec une autosuffisance financière,
-                            nourricière et énergétique.
-                            Nous pouvons parler de permaculture dans son vrai sens :
-                            végétaux, minéraux et animaux sont en complète symbiose dans un cercle vertueux.
-                            Viendront un centre de compostage mécanique,
-                            un séchoir et un four solaire, un rucher, un centre d’aquaponie…
-                            Des buts accessibles et motivants dans l’intérêt général.</p>
-                    </div>
-                    <img src="images/ferme.jpg" alt="Buts&Projets" class="responsive-img">
+                
+                    
                 </div>
 
             </div>
@@ -351,40 +453,73 @@
                         communautaires.</h3>
                     <div class="grid">
                         <div class="petiteCard">
-
-                            <img src="images/steph.JPG" alt="STÉPH" class="responsive-img">
-                            <h3>STÉPH</h3>
-                            <h4>LE BIG BOSS</h4>
+                            <div>
+                                <img src="images/steph.JPG" alt="STÉPH" class="responsive-img80">
+                            </div>
+                            <div>
+                                <h3>STÉPH</h3>
+                                <h4>LE BIG BOSS</h4>
+                            </div>
+                            
                         </div>
                         <div class="petiteCard">
 
-                            <img src="images/lulu.JPG" alt="LULU" class="responsive-img">
-                            <h3>DAME LULU</h3>
-                            <h4>BRIN D’ACIER</h4>
+                            <div>
+                                <img src="images/lulu.JPG" alt="LULU" class="responsive-img80">
+                            </div>
+                            <div>
+                                <h3>DAME LULU</h3>
+                                <h4>BRIN D’ACIER</h4>
+                            </div>
+                            
+                            
                         </div>
                         <div class="petiteCard">
 
-                            <img src="images/nico.JPG" alt="NICO" class="responsive-img">
-                            <h3>NICO</h3>
-                            <h4>LA POÊLE À FRIRE</h4>
+                            <div>
+                                <img src="ImageTravaillé/Swedish_poser.webp" alt="NICO" class="responsive-img80">
+                            </div>
+                            <div>
+                                <h3>RECRUTEMENT</h3>
+                                <h4>EN COURS</h4>
+                            </div>
+                            
+                            
+                        </div>
+
+                        <div class="petiteCard">
+                            <div>
+                                <img src="images/eric.JPG" alt="ÉRIC" class="responsive-img80">
+                            </div>
+                            <div>
+                                <h3>ÉRIC</h3>
+                                <h4>LE LÉGUME À VARIER</h4>
+                            </div>
+                            
                         </div>
                         <div class="petiteCard">
 
-                            <img src="images/eric.JPG" alt="ÉRIC" class="responsive-img">
-                            <h3>ÉRIC</h3>
-                            <h4>LE LÉGUME À VARIER</h4>
+                            <div>
+                                <img src="images/laura.JPG" alt="LAURA" class="responsive-img80">
+                            </div>
+                            <div>
+                                <h3>LAURA</h3>
+                                <h4>LA PÂQUERETTE JOVIALE</h4>
+                            </div>
+                            
+                            
                         </div>
                         <div class="petiteCard">
 
-                            <img src="images/laura.JPG" alt="LAURA" class="responsive-img">
-                            <h3>LAURA</h3>
-                            <h4>LA PÂQUERETTE JOVIALE</h4>
-                        </div>
-                        <div class="petiteCard">
-
-                            <img src="images/malou.JPG" alt="MALOU" class="responsive-img">
-                            <h3>MALOU</h3>
-                            <h4>LE COEUR D’ARTICHAUT</h4>
+                            <div>
+                                <img src="images/malou.JPG" alt="MALOU" class="responsive-img80">
+                            </div>
+                            <div>
+                                <h3>MALOU</h3>
+                                <h4>LE COEUR D’ARTICHAUT</h4>
+                            </div>
+                            
+                            
                         </div>
                     </div>
 
@@ -399,7 +534,7 @@
                     <h2>Partenaires</h2>
                     <h4>Nous collaborons avec des partenaires locaux pour soutenir nos initiatives et élargir notre
                         impact. Leur soutien est essentiel pour le développement durable de nos projets.</h4>
-                    <img src="images/lesPartenaires.JPG" alt="Partenaires" class="responsive-img">
+                    <img src="images/lesPartenaires.JPG" alt="Partenaires" class="responsive-img80">
                 </div>
 
             </div>

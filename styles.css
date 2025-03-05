@@ -14,14 +14,18 @@ body {
         background-image: url('images/Background1.jpg');
     }
 
-    33% {
+    25% {
         background-image: url('images/Background2.jpg');
     }
 
-    67% {
+    50% {
         background-image: url('images/Background3.jpg');
     }
 
+    75% {
+        background-image: url('images/Background4.jpg');
+    }
+    
     100% {
         background-image: url('images/Background1.jpg');
     }
@@ -178,10 +182,13 @@ body::before {
     max-width: 1200px;
 }
 
+
+
 .text {
     margin-right: 20px;
     /* Espace entre le texte et l'image */
 }
+
 
 
 header {
@@ -248,6 +255,7 @@ nav ul li a.active {
 .floating-logo img:hover {
     transform: scale(1.05);
 }
+
 
 .floating-btn {
     background-color: #4CAF50;
@@ -326,9 +334,17 @@ section .content-box {
 
 
 section img.responsive-img {
-    width: 100%;
+    width: 50%;
+    height: 50%;
     border-radius: 8px;
-    margin-top: 20px;
+    margin: 20px;
+}
+
+section img.responsive-img80 {
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    margin: 20px;
 }
 
 .grid {
@@ -365,6 +381,106 @@ section img.responsive-img {
     text-align: left;
 }
 
+.cardD {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+
+
+/* 📌 Image principale */
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* 📌 Miniatures */
+.thumbnails {
+    display: flex;
+    justify-content: center; /* Centre les images horizontalement */
+    align-items: center; /* Aligne verticalement (utile si elles sont de tailles différentes) */
+    gap: 10px; /* Espacement entre les miniatures */
+    margin-top: 10px;
+}
+
+.thumb {
+    width: 60px; /* Assure une taille fixe */
+    height: 60px;
+    object-fit: cover; /* Empêche l'image de s'étirer et garde ses proportions */
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border 0.3s;
+}
+
+/* 🔹 Ajout pour s'assurer que l'image dans .thumb ne prend pas toute la page */
+.thumb img {
+    width: 100%; /* S'assure que l'image respecte la taille du parent */
+    height: 100%;
+    object-fit: cover; /* Coupe l'image si nécessaire sans la déformer */
+    display: block; /* Supprime les marges blanches éventuelles */
+}
+
+
+.thumb:hover {
+    transform: scale(1.1);
+    border: 2px solid #4CAF50;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+    .cardD {
+        grid-template-columns: 1fr; /* Passe en colonne */
+        grid-template-rows: auto auto;
+    }
+
+    .thumb {
+        width: 50px; /* Miniatures plus petites sur mobile */
+        height: 50px;
+    }
+
+    .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image-container {
+        order: 1;
+    }
+
+    .text-container {
+        order: 2;
+    }
+
+    .thumbnails {
+        justify-content: center;
+    }
+    .thumb {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
 .custom-h2 {
     width: 100%;
     color: #fff;
@@ -376,6 +492,8 @@ section img.responsive-img {
     border-radius: 5px;
     /* Optionnel : Ajoute des coins arrondis pour un effet plus stylé */
 }
+
+
 
 .custom-h2Plus {
     width: 100%;
@@ -556,9 +674,7 @@ footer .social a:hover {
         margin: 10px 0;
     }
 
-    .container {
-        width: 95%;
-    }
+    
 
     .card {
         padding: 15px;
@@ -596,4 +712,48 @@ footer .social a:hover {
         padding: 10px 20px;
         font-size: 14px;
     }
+
+    /* 🟢 Structure en deux colonnes (ex: Histoire d’hier) */
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    gap: 20px;
+    align-items: center;
+}
+
+/* 🟢 Structure en quatre colonnes (ex: Histoire d’aujourd’hui) */
+.grid-four-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+
+.grid-four-columns .text-container {
+    grid-column: span 2; /* Le texte prend deux colonnes en haut */
+}
+
+/* 🟢 Images et textes */
+.text-container {
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Responsive (Affichage mobile) */
+@media screen and (max-width: 768px) {
+    .grid-two-columns {
+        grid-template-columns: 1fr; /* Empile les éléments */
+    }
+
+    .grid-four-columns {
+        grid-template-columns: 1fr; /* Empile tout en une seule colonne */
+    }
+}
+
 }
