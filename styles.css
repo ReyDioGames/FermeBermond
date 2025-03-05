@@ -315,8 +315,10 @@ nav ul li a.active {
     color: #fff;
 }
 
+
 section {
     padding: 60px 0;
+    scroll-margin-top: 80px;
     background: transparent;
     /* Full transparency for the section background */
     position: relative;
