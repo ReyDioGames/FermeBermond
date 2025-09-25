@@ -14,16 +14,20 @@ body {
         background-image: url('images/Background1.jpg');
     }
 
-    25% {
+    20% {
         background-image: url('images/Background2.jpg');
     }
 
-    50% {
+    40% {
         background-image: url('images/Background3.jpg');
     }
 
-    75% {
+    60% {
         background-image: url('images/Background4.jpg');
+    }
+
+    80% {
+        background-image: url('images/Background5.jpg');
     }
     
     100% {
