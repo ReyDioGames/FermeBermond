@@ -171,6 +171,8 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #ffffff;
+    display: block;       /* permet de traiter le lien comme un bloc pour centrer le texte */
+    text-align: center;   /* centre le texte à l'intérieur du lien */
 }
 
 /* Cacher le menu burger sur les grands écrans */
