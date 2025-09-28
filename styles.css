@@ -9,6 +9,123 @@ body {
     position: relative;
 }
 
+ .service {
+    background: #F5F5F5;
+  }
+
+
+
+  .containerS {
+  display: flex;
+  align-items: center;   /* centre verticalement */
+  justify-content: space-between;
+}
+
+.logo-titre img {
+  max-width: 15vw;   /* 10% de la largeur de l'écran */
+  height: auto;      /* conserve les proportions */
+  display: block;    /* supprime l'espace blanc autour */
+}
+
+.nav {
+  flex: 0 0 75%;   /* fixe la largeur à 70% */
+}
+.socials {
+    flex: 0 0 10%;
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a i {
+  color: #ffffff;   /* définit la couleur des icônes en blanc */
+  font-size: 20px;  /* ajuste la taille si besoin */
+  margin-right: 10px; /* espace entre les icônes */
+  transition: color 0.3s; /* optionnel : effet au survol */
+}
+
+.socials a:hover i {
+  color: #000000; /* couleur au survol, optionnel */
+}
+
+
+  .service__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #5b6c78;
+    border-radius: 50%;
+  }
+  
+  .service__icon svg {
+    height: 35px;
+  }
+
+  .service__icon img {
+  width: 60px;   /* ajuste la largeur selon ton besoin */
+  height: auto;  /* conserve les proportions */
+}
+
+  
+  .service__content {
+    flex: 1;
+  }
+  
+    .section-header {
+    text-align: center;
+  }
+
+  .service h3 {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width:749px) {
+    .service {
+      text-align: center;
+    }
+  
+    .service__icon {
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (min-width:750px) {
+    .service {
+      display: flex;
+      align-items: center;
+    }
+  
+    .service__icon {
+      margin-right: 2rem;
+    }
+  }
+
+ .service .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.gridS {
+  display: flex;
+}
+
+.gridS > * {
+  flex: 1;          /* chaque enfant prend la même place */
+  max-width: 50%;   /* empêche de dépasser la moitié */
+}
+
+  
+ .service .grid__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+
 @keyframes slideImages {
     0% {
         background-image: url('images/Background1.jpg');
@@ -184,6 +301,12 @@ body::before {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.containerS {
+    width: 95%;
+    margin: 0 auto;
+
 }
 
 
