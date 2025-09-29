@@ -68,29 +68,131 @@ burger.addEventListener('click', () => {
 
 
 function changeImage(imageSrc) {
-    document.getElementById("mainImage1").style.opacity = "0"; // Effet de fade-out
-
+    document.getElementById("mainImage1").style.opacity = "0";
     setTimeout(() => {
         document.getElementById("mainImage1").src = imageSrc;
-        document.getElementById("mainImage1").style.opacity = "1"; // Effet de fade-in
-    }, 300); // Changement après l'animation
+        document.getElementById("mainImage1").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage1(imageSrc) {
+    document.getElementById("mainImage").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage").src = imageSrc;
+        document.getElementById("mainImage").style.opacity = "1";
+    }, 300);
 }
 
 function changeImage2(imageSrc) {
-    document.getElementById("mainImage2").style.opacity = "0"; // Effet de fade-out
-
+    document.getElementById("mainImage2").style.opacity = "0";
     setTimeout(() => {
         document.getElementById("mainImage2").src = imageSrc;
-        document.getElementById("mainImage2").style.opacity = "1"; // Effet de fade-in
-    }, 300); // Changement après l'animation
+        document.getElementById("mainImage2").style.opacity = "1";
+    }, 300);
 }
 
 function changeImage3(imageSrc) {
-    document.getElementById("mainImage3").style.opacity = "0"; // Effet de fade-out
-
+    document.getElementById("mainImage3").style.opacity = "0";
     setTimeout(() => {
         document.getElementById("mainImage3").src = imageSrc;
-        document.getElementById("mainImage3").style.opacity = "1"; // Effet de fade-in
-    }, 300); // Changement après l'animation
+        document.getElementById("mainImage3").style.opacity = "1";
+    }, 300);
 }
+
+function changeImage4(imageSrc) {
+    document.getElementById("mainImage4").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage4").src = imageSrc;
+        document.getElementById("mainImage4").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage5(imageSrc) {
+    document.getElementById("mainImage5").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage5").src = imageSrc;
+        document.getElementById("mainImage5").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage6(imageSrc) {
+    document.getElementById("mainImage6").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage6").src = imageSrc;
+        document.getElementById("mainImage6").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage7(imageSrc) {
+    document.getElementById("mainImage7").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage7").src = imageSrc;
+        document.getElementById("mainImage7").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage8(imageSrc) {
+    document.getElementById("mainImage8").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage8").src = imageSrc;
+        document.getElementById("mainImage8").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage9(imageSrc) {
+    document.getElementById("mainImage9").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage9").src = imageSrc;
+        document.getElementById("mainImage9").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage10(imageSrc) {
+    document.getElementById("mainImage10").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage10").src = imageSrc;
+        document.getElementById("mainImage10").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage11(imageSrc) {
+    document.getElementById("mainImage11").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage11").src = imageSrc;
+        document.getElementById("mainImage11").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage12(imageSrc) {
+    document.getElementById("mainImage12").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage12").src = imageSrc;
+        document.getElementById("mainImage12").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage13(imageSrc) {
+    document.getElementById("mainImage13").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage13").src = imageSrc;
+        document.getElementById("mainImage13").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage14(imageSrc) {
+    document.getElementById("mainImage14").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage14").src = imageSrc;
+        document.getElementById("mainImage14").style.opacity = "1";
+    }, 300);
+}
+
+function changeImage15(imageSrc) {
+    document.getElementById("mainImage15").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("mainImage15").src = imageSrc;
+        document.getElementById("mainImage15").style.opacity = "1";
+    }, 300);
+}
+
 
