@@ -196,3 +196,50 @@ function changeImage15(imageSrc) {
 }
 
 
+(function() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAdherentModals);
+  } else {
+    initAdherentModals();
+  }
+
+  function initAdherentModals() {
+    const triggers = document.querySelectorAll('.adherentTrigger');
+    const modals = document.querySelectorAll('.adherentModal');
+    const closeBtns = document.querySelectorAll('.adherentModal__close');
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', function() {
+        const modalId = this.dataset.modal;
+        const modalEl = document.getElementById(modalId);
+        if (!modalEl) return;
+
+        modalEl.classList.add('show');
+        document.body.style.overflow = 'hidden'; // bloque le scroll
+      });
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modals.forEach(m => m.classList.remove('show'));
+        document.body.style.overflow = '';
+      });
+    });
+
+    modals.forEach(modal => {
+      modal.addEventListener('click', e => {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        modals.forEach(m => m.classList.remove('show'));
+        document.body.style.overflow = '';
+      }
+    });
+  }
+})();

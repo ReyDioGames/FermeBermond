@@ -21,6 +21,7 @@
             transform: translateY(0);
         }
     </style>
+
 </head>
 
 <body>
@@ -912,12 +913,89 @@
         </section>
 
 
-        <section id="rejoindre" class="content-box">
+        <section id="rejoindre" class="rejoindre">
             <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Devenez Adhérent !</h2>
+                    <p>Il existe plusieurs façons de devenir adhérent ; choisissez celle qui vous convient.</p>
+                </div>
 
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqczc1rQtLsqZw2fdRcvT5zBSgNVIto0ZV3RmiGoZUuru19A/viewform?embedded=true" width="640" height="1124" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                 <!-- Conteneur de la grille -->
+                <div class="adherentGrid">
+                    <div class="adherentGrid__item adherentTrigger" data-modal="adherentModal1">
+                        <img src="images/Devenez-visiteur.png" alt="Adhésion 1">
+                        <div class="adherentGrid__overlay">+</div>
+                        <p>Devenez-visiteur</p>
+                    </div>
+
+                    <div class="adherentGrid__item adherentTrigger" data-modal="adherentModal2">
+                        <img src="images/Devenez-bienfaiteur.png" alt="Adhésion 2">
+                        <div class="adherentGrid__overlay">+</div>
+                        <p>Devenez-bienfaiteur</p>
+                    </div>
+
+                    <div  class="adherentGrid__item">
+                        <a href="#visite">
+                            <img src="images/Devenez-benevoles.png" alt="Devenez bénévoles">
+                            <div class="adherentGrid__overlay">+</div>
+                        </a>
+                        <p>Devenez-bénévoles</p>
+                    </div>
+
+                </div>
+            </div>
+                
+
+                
 
         </section>
+
+
+
+            <!-- MODAL 1 -->
+            <div class="adherentModal" id="adherentModal1">
+                <div class="adherentModal__content">
+                    <span class="adherentModal__close">&times;</span>
+
+                    <iframe id="haWidget1" allowtransparency="true" 
+                        src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/visiteur/widget"
+                        style="width: 100%; border: none;"
+                        onload="window.addEventListener('message', function(e) {
+                            const dataHeight = e.data.height;
+                            document.getElementById('haWidget1').height = dataHeight + 'px';
+                        })">
+                    </iframe>
+
+                </div>
+            </div>
+
+            <!-- MODAL 2 -->
+            <div class="adherentModal" id="adherentModal2">
+                <div class="adherentModal__content">
+                    <span class="adherentModal__close">&times;</span>
+
+                    <iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/bienfaiteur/widget" style="width: 100%; border: none;" onload="window.addEventListener( 'message', function(e) { const dataHeight = e.data.height; const haWidgetElement = document.getElementById('haWidget'); haWidgetElement.height = dataHeight + 'px'; } )" ></iframe>
+
+                </div>
+            </div>
+
+            <!-- MODAL 3 -->
+            <div class="adherentModal" id="adherentModal3">
+                <div class="adherentModal__content">
+                    <span class="adherentModal__close">&times;</span>
+
+                    <iframe id="haWidget3" allowtransparency="true"
+                        src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/visiteur/widget"
+                        style="width: 100%; border: none;"
+                        onload="window.addEventListener('message', function(e) {
+                            const dataHeight = e.data.height;
+                            document.getElementById('haWidget3').height = dataHeight + 'px';
+                        })">
+                    </iframe>
+
+                </div>
+            </div>
+
 
         <section id="chiffres" class="content-box">
             <div class="container">
@@ -1139,11 +1217,11 @@
                     <h3>Pour nous contacter, envoyez-nous un message directement ci-dessous.</h3>
                 </div>
 
-                <form action="https://formsubmit.co/contact@lafermebermond.com" method="POST" class="form">
+                <form action="https://formsubmit.co/rahalrayan3@gmail.com" method="POST" class="form">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_next"
-                        value="https://dgeo-dev.github.io/formation-youtube-html-cs-js/thanks.html">
+                        value="#accueil">
 
                     <div class="form-group">
                         <label for="firstname">Nom</label>

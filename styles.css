@@ -497,6 +497,11 @@ section img.responsive-img80 {
     text-align: center;
 }
 
+.card__inner {
+    padding: 2rem;
+  }
+  
+
 .card img {
     max-width: 100%;
     height: auto;
@@ -790,6 +795,209 @@ footer .social a:hover {
     font-size: 1.1em;
 }
 
+
+  .rejoindre {
+    background: #F5F5F5;
+  }
+  
+  .rejoindre .grid__item {
+    max-width: 50%;
+    margin-bottom: 0;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  
+  .rejoindre .grid__item.hide {
+    opacity: 0;
+    max-width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .4s ease;
+  }
+  
+  .rejoindre-filters .grid__item {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+  
+  .rejoindre-filters a {
+    color: var(--color-body);
+    background: #EEE;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .rejoindre-filters a.active {
+    color: #FFF;
+    background: #5b6c78;
+  }
+
+  @media screen and (max-width:749px) {
+    .rejoindre a {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media screen and (min-width:750px) {
+    .rejoindre .grid__item {
+      max-width: 33.3333%;
+    }
+  
+    .rejoindre-filters .grid__item {
+      max-width: 25%;
+    }
+      
+    .modal__content {
+      padding: 3rem;
+    }
+  
+    .modal .grid__item {
+      max-width: 50%;
+    }
+  }
+
+
+   .card__overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+  
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 110%;
+    transition: all .3s;
+  
+  }
+  
+  .card__overlay a {
+    font-size: 4.5rem;
+    color: #FFF;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .card:hover .card__overlay {
+    top: 0;
+  }
+  
+/* ===== ADHERENT GRID ===== */
+.adherentGrid {
+    display: flex;
+    justify-content: space-between; /* espace entre gauche / centre / droite */
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; /* centre la grille horizontalement */
+    gap: 20px;      /* petit espace entre items */
+}
+
+@media (max-width: 768px) {
+    .adherentGrid {
+        flex-direction: column; /* empile sur mobile */
+        align-items: center;
+    }
+}
+
+
+
+.adherentGrid__item {
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.25s ease;
+}
+
+.adherentGrid__item img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.adherentGrid__item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8); /* assombrit légèrement l'image */
+}
+
+/* Overlay + + */
+.adherentGrid__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+}
+
+.adherentGrid__item:hover .adherentGrid__overlay {
+    opacity: 1;
+}
+
+
+.adherentGrid__item:hover img {
+    transform: scale(1.06);
+    filter: saturate(1.03) brightness(0.98);
+}
+
+.adherentGrid__item:hover {
+    transform: translateY(-6px);
+}
+
+/* ===== MODAL ===== */
+.adherentModal {
+    display: none;
+    position: fixed;    /* FIXE par rapport à l’écran */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.adherentModal.show {
+    display: flex;
+}
+
+.adherentModal__content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 1100px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.adherentModal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
 /* Media Queries for responsive design */
 
 @media (max-width: 768px) {
@@ -890,5 +1098,9 @@ footer .social a:hover {
         grid-template-columns: 1fr; /* Empile tout en une seule colonne */
     }
 }
+
+
+
+
 
 }
