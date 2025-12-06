@@ -1217,30 +1217,39 @@
                     <h3>Pour nous contacter, envoyez-nous un message directement ci-dessous.</h3>
                 </div>
 
-                <form action="https://formsubmit.co/rahalrayan3@gmail.com" method="POST" class="form">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_next"
-                        value="#accueil">
+                <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+                    <!-- Clé API (obligatoire) -->
+                    <input type="hidden" name="access_key" value="5c71631e-0e88-4956-a04f-dbca95cc94d5">
+
+                    <!-- Anti-spam -->
+                    <input type="checkbox" name="botcheck" style="display:none;">
 
                     <div class="form-group">
                         <label for="firstname">Nom</label>
                         <input type="text" name="firstname" id="firstname" placeholder="Nom" required>
                     </div>
+
                     <div class="form-group">
                         <label for="lastname">Prénom</label>
                         <input type="text" name="lastname" id="lastname" placeholder="Prénom">
                     </div>
+
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Email" required>
                     </div>
+
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" placeholder="Message" required></textarea>
                     </div>
-                    <input type="submit" class="btn-submit" value="Envoyer">
+
+                    <button type="submit" class="btn-submit">Envoyer</button>
+
                 </form>
+
+
             </div>
         </section>
 
