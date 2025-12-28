@@ -1,4 +1,7 @@
-Redirect 301 /index.php/contact/ https://lafermebermond.com/
 RewriteEngine On
-RewriteCond %{THE_REQUEST} \s/index\.php[^\s]* [NC]
-RewriteRule ^index\.php.*$ https://lafermebermond.com/ [R=301,L]
+
+# Forcer la racine comme URL canonique
+RewriteRule ^index\.php$ https://lafermebermond.com/ [R=301,L]
+
+# Rediriger toute ancienne URL index.php/*
+RewriteRule ^index\.php/.*$ https://lafermebermond.com/ [R=301,L]
