@@ -389,6 +389,23 @@ nav ul li a.active {
     transform: scale(1.05);
 }
 
+.floating-Lettre img {
+    background-color: #0000001a;
+    width: 100%;
+    /* Le logo prendra toute la largeur du bouton */
+    max-width: 150px;
+    /* Limite la largeur du logo, ajustez selon vos besoins */
+    margin-bottom: 10px;
+    /* Espace entre le logo et le bouton */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.floating-Lettre img:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
 
 .floating-btn {
     background-color: #4CAF50;
