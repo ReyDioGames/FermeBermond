@@ -3,67 +3,438 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lettre Ouverte</title>
+  <title>Lettre Ouverte – Élections Municipales Nice 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --vert:       #2e7d32;
+      --vert-clair: #4CAF50;
+      --vert-fonce: #1b5e20;
+      --or:         #c8a84b;
+      --or-clair:   #f0d080;
+      --blanc:      #f9f7f2;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #4CAF50;          /* fond vert ferme */
-      color: white;                       /* texte blanc pour contraster */
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--vert-fonce);
+      color: var(--blanc);
       min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(135deg, var(--vert-fonce) 0%, var(--vert) 100%);
+      padding: 8px 24px;
+      border-bottom: 2px solid var(--or);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    header p {
+      font-size: 0.78rem;
+      opacity: 0.7;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--or-clair);
+      white-space: nowrap;
+    }
+    header .header-sep { color: var(--or); opacity: 0.5; }
+
+    /* ── LAYOUT PRINCIPAL ── */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 0;
+      height: calc(100vh - 44px);
+    }
+
+    /* ── COLONNE GAUCHE : PDF ── */
+    .col-pdf {
       display: flex;
       flex-direction: column;
+      border-right: 2px solid var(--or);
+    }
+
+    /* Bandeau dynamique */
+    .pdf-bandeau {
+      background: rgba(0,0,0,0.3);
+      border-bottom: 1px solid rgba(200,168,75,0.3);
+      padding: 10px 20px;
+      display: flex;
       align-items: center;
+      gap: 12px;
+      min-height: 54px;
+    }
+    .pdf-bandeau-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .pdf-bandeau-texte { flex: 1; min-width: 0; }
+    .pdf-bandeau-titre {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--or-clair);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: opacity 0.2s;
+    }
+    .pdf-bandeau-sous {
+      font-size: 0.74rem;
+      opacity: 0.55;
+      margin-top: 2px;
+      transition: opacity 0.2s;
+    }
+    .pdf-bandeau-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      flex-shrink: 0;
+    }
+    .tag-lettre {
+      background: rgba(200,168,75,0.15);
+      border: 1px solid var(--or);
+      color: var(--or-clair);
+    }
+    .tag-reponse {
+      background: rgba(76,175,80,0.15);
+      border: 1px solid var(--vert-clair);
+      color: #a5d6a7;
     }
 
-    h1 {
-      margin: 30px 0 20px 0;
-      font-size: 2.2rem;
-      text-align: center;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.3); /* léger effet pour lisibilité */
+    .pdf-wrapper { flex: 1; overflow: hidden; }
+    .pdf-wrapper iframe {
+      width: 100%; height: 100%;
+      border: none; background: white; display: block;
     }
 
-    .pdf-container {
-      width: 100%;
-      max-width: 1100px;                   /* un peu plus large que 1000px */
-      margin: 0 auto 40px auto;
-      padding: 0 15px;
-      box-sizing: border-box;
+    /* ── COLONNE DROITE ── */
+    .col-reponses {
+      display: flex;
+      flex-direction: column;
+      background: rgba(0,0,0,0.18);
+      overflow: hidden;
     }
 
-    iframe {
-      width: 100%;
-      height: 85vh;                        /* un peu moins haut pour laisser de la marge */
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-      background-color: white;             /* fond blanc derrière le pdf au cas où */
+    /* Bloc Lettre Ouverte stylisé */
+    .sidebar-lettre {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(200,168,75,0.35);
+      transition: background 0.25s;
+      flex-shrink: 0;
     }
+    .sidebar-lettre:hover  { background: rgba(200,168,75,0.07); }
+    .sidebar-lettre.active { background: rgba(200,168,75,0.14); }
 
-    /* Pour petits écrans (mobile) */
+    .sidebar-lettre-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(27,94,32,0.55) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    .sidebar-lettre-content {
+      position: relative;
+      padding: 14px 16px 12px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+    .sidebar-lettre-icon {
+      width: 48px; height: 48px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #c8a84b, #7a5010);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+      border: 1px solid rgba(200,168,75,0.45);
+    }
+    .sidebar-lettre-texte { flex: 1; min-width: 0; }
+    .sidebar-lettre-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--or);
+      opacity: 0.75;
+      margin-bottom: 3px;
+    }
+    .sidebar-lettre-titre {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.08rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .sidebar-lettre-sub {
+      font-size: 0.7rem;
+      opacity: 0.5;
+      margin-top: 3px;
+    }
+    .sidebar-lettre-arrow {
+      font-size: 0.9rem;
+      opacity: 0.35;
+      flex-shrink: 0;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .sidebar-lettre:hover .sidebar-lettre-arrow,
+    .sidebar-lettre.active .sidebar-lettre-arrow { opacity: 0.9; transform: translateX(3px); }
+
+    /* Séparateur stylisé */
+    .reponses-sep {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px 6px;
+      flex-shrink: 0;
+    }
+    .reponses-sep-line {
+      flex: 1; height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,168,75,0.45), transparent);
+    }
+    .reponses-sep-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--or);
+      opacity: 0.65;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .reponses-sep-label::before,
+    .reponses-sep-label::after { content: '✦'; font-size: 0.45rem; opacity: 0.7; }
+
+    /* Liste */
+    .reponses-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .reponses-list::-webkit-scrollbar { width: 4px; }
+    .reponses-list::-webkit-scrollbar-thumb { background: var(--or); border-radius: 10px; }
+
+    /* Carte réponse */
+    .reponse-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(200,168,75,0.18);
+      border-radius: 10px;
+      padding: 10px 13px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: inherit;
+    }
+    .reponse-card:hover {
+      background: rgba(200,168,75,0.13);
+      border-color: var(--or);
+      transform: translateX(3px);
+    }
+    .reponse-card.active {
+      background: rgba(200,168,75,0.18);
+      border-color: var(--or-clair);
+      box-shadow: 0 0 10px rgba(200,168,75,0.22);
+    }
+    .reponse-avatar {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--vert), var(--vert-clair));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700; font-size: 0.85rem;
+      flex-shrink: 0;
+      border: 1.5px solid rgba(200,168,75,0.4);
+    }
+    .reponse-info { flex: 1; min-width: 0; }
+    .reponse-nom { font-weight: 600; font-size: 0.86rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .reponse-meta { font-size: 0.71rem; opacity: 0.5; margin-top: 1px; }
+    .reponse-arrow { opacity: 0.3; font-size: 0.82rem; flex-shrink: 0; transition: opacity 0.2s; }
+    .reponse-card:hover .reponse-arrow { opacity: 1; }
+
+    /* ── MOBILE ── */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 1.8rem;
-        margin: 20px 0 15px 0;
+      .main-layout {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: calc(100vh - 44px);
       }
-      iframe {
-        height: 80vh;
+      .col-reponses {
+        border-right: none;
+        border-bottom: 2px solid var(--or);
+        max-height: 250px;
       }
+      .col-pdf { border-right: none; height: 75vh; }
+      .pdf-wrapper iframe { height: 100%; }
+      .reponses-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 10px 10px;
+        gap: 8px;
+      }
+      .reponse-card {
+        min-width: 170px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        transform: none !important;
+      }
+      .reponse-card:hover { transform: scale(1.02) !important; }
+      .reponse-arrow { display: none; }
+    }
+    @media (max-width: 480px) {
+      header { padding: 6px 12px; gap: 8px; }
+      header p, header .header-sep { display: none; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Lettre Ouverte</h1>
+<header>
+  <h1>Lettre Ouverte aux Candidat·e·s</h1>
+  <span class="header-sep">|</span>
+  <p>Élections Municipales de Nice 2026</p>
+</header>
 
-  <div class="pdf-container">
-    <iframe 
-      src="LETTRE OUVERTE AUX CANDIDATES ET CANDIDATS AUX ÉLECTIONS MUNICIPALES DE NICE des 15 et 22 MARS 2026.pdf"
-      title="Lettre Ouverte aux candidates et candidats aux élections municipales de Nice 2026">
-    </iframe>
+<div class="main-layout">
+
+  <!-- GAUCHE -->
+  <div class="col-pdf">
+    <div class="pdf-bandeau">
+      <div class="pdf-bandeau-icon" id="bandeau-icon">📄</div>
+      <div class="pdf-bandeau-texte">
+        <div class="pdf-bandeau-titre" id="bandeau-titre">La Lettre Ouverte</div>
+        <div class="pdf-bandeau-sous"  id="bandeau-sous">Document original · Élections municipales de Nice 2026</div>
+      </div>
+      <div class="pdf-bandeau-tag tag-lettre" id="bandeau-tag">Lettre</div>
+    </div>
+    <div class="pdf-wrapper">
+      <iframe id="pdf-viewer"
+        src="LETTRE OUVERTE AUX CANDIDATES ET CANDIDATS AUX ÉLECTIONS MUNICIPALES DE NICE des 15 et 22 MARS 2026.pdf"
+        title="Lettre Ouverte">
+      </iframe>
+    </div>
   </div>
 
+  <!-- DROITE -->
+  <div class="col-reponses">
+
+    <!-- Bloc Lettre Ouverte -->
+    <div class="sidebar-lettre active"
+         data-pdf="LETTRE OUVERTE AUX CANDIDATES ET CANDIDATS AUX ÉLECTIONS MUNICIPALES DE NICE des 15 et 22 MARS 2026.pdf"
+         data-titre="La Lettre Ouverte"
+         data-sous="Document original · Élections municipales de Nice 2026"
+         data-icon="📄"
+         data-type="lettre"
+         onclick="ouvrirDocument(this)">
+      <div class="sidebar-lettre-bg"></div>
+      <div class="sidebar-lettre-content">
+        <div class="sidebar-lettre-icon">📄</div>
+        <div class="sidebar-lettre-texte">
+          <div class="sidebar-lettre-label">Document principal</div>
+          <div class="sidebar-lettre-titre">Lettre Ouverte</div>
+          <div class="sidebar-lettre-sub">Élections Municipales · Nice 2026</div>
+        </div>
+        <div class="sidebar-lettre-arrow">→</div>
+      </div>
+    </div>
+
+    <!-- Séparateur -->
+    <div class="reponses-sep">
+      <div class="reponses-sep-line"></div>
+      <div class="reponses-sep-label">Réponses reçues</div>
+      <div class="reponses-sep-line"></div>
+    </div>
+
+    <!-- Liste des réponses
+         data-pdf   : chemin vers le PDF
+         data-titre : nom dans le bandeau
+         data-sous  : info dans le bandeau (parti, date…)
+         data-icon  : emoji bandeau
+    -->
+    <div class="reponses-list">
+
+      <div class="reponse-card"
+           data-pdf="Réponse officielle_Nice Démocratie Directe_Céline Forjonnel.pdf"
+           data-titre="Céline Forjonnel"
+           data-sous="Nice Démocratie Directe"
+           data-icon="✉️"
+           onclick="ouvrirDocument(this)">
+        <div class="reponse-avatar">CF</div>
+        <div class="reponse-info">
+          <div class="reponse-nom">Céline Forjonnel</div>
+          <div class="reponse-meta">Nice Démocratie Directe</div>
+        </div>
+        <div class="reponse-arrow">→</div>
+      </div>
+
+      <!-- Dupliquez ce bloc pour chaque nouvelle réponse :
+      <div class="reponse-card"
+           data-pdf="reponses/fichier.pdf"
+           data-titre="Prénom Nom"
+           data-sous="Liste · Date"
+           data-icon="✉️"
+           onclick="ouvrirDocument(this)">
+        <div class="reponse-avatar">XX</div>
+        <div class="reponse-info">
+          <div class="reponse-nom">Prénom Nom</div>
+          <div class="reponse-meta">Liste · Date</div>
+        </div>
+        <div class="reponse-arrow">→</div>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function ouvrirDocument(el) {
+    document.querySelectorAll('.reponse-card, .sidebar-lettre').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+
+    const pdf   = el.getAttribute('data-pdf');
+    const titre = el.getAttribute('data-titre');
+    const sous  = el.getAttribute('data-sous');
+    const icon  = el.getAttribute('data-icon');
+    const type  = el.getAttribute('data-type') || 'reponse';
+
+    document.getElementById('bandeau-icon').textContent  = icon;
+    document.getElementById('bandeau-titre').textContent = titre;
+    document.getElementById('bandeau-sous').textContent  = sous;
+
+    const tag = document.getElementById('bandeau-tag');
+    tag.textContent = type === 'lettre' ? 'Lettre' : 'Réponse';
+    tag.className   = 'pdf-bandeau-tag ' + (type === 'lettre' ? 'tag-lettre' : 'tag-reponse');
+
+    document.getElementById('pdf-viewer').src = pdf;
+
+    if (window.innerWidth <= 768) {
+      document.querySelector('.col-pdf').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+</script>
 
 </body>
 </html>

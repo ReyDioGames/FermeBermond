@@ -392,18 +392,25 @@ nav ul li a.active {
 .floating-Lettre img {
     background-color: #0000001a;
     width: 100%;
-    /* Le logo prendra toute la largeur du bouton */
     max-width: 150px;
-    /* Limite la largeur du logo, ajustez selon vos besoins */
     margin-bottom: 10px;
-    /* Espace entre le logo et le bouton */
     border-radius: 8px;
     transition: transform 0.3s;
+    
+    /* Effet pulsation */
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1);    box-shadow: 0 0 0px rgba(255, 0, 0, 0); }
+    50%  { transform: scale(1.07); box-shadow: 0 0 18px rgba(255, 50, 50, 0.8); }
+    100% { transform: scale(1);    box-shadow: 0 0 0px rgba(255, 0, 0, 0); }
 }
 
 .floating-Lettre img:hover {
-    background-color: #000000;
-    transform: scale(1.05);
+    animation: none; /* Stop la pulsation au survol */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 50, 50, 1);
 }
 
 
