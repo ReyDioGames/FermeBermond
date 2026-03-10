@@ -435,6 +435,29 @@ nav ul li a.active {
     transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .floating-container {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .floating-Lettre img {
+    max-width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .floating-logo img {
+    max-width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .floating-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+}
+
 .hero {
     background-color: rgba(0, 0, 0, 0.4);
     height: 80vh;
