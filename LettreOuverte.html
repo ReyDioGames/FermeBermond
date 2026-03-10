@@ -455,19 +455,24 @@
       pdfEnCours = pdf;
       loader.style.display = 'none';
 
-      // Calculer la largeur disponible pour les pages
+      // Calculer la largeur disponible + ratio haute densité (Retina)
+      const dpr     = window.devicePixelRatio || 1;
       const largeur = wrapper.clientWidth - 16;
 
       for (let i = 1; i <= pdf.numPages; i++) {
-        const page    = await pdf.getPage(i);
-        const vp      = page.getViewport({ scale: 1 });
-        const scale   = largeur / vp.width;
+        const page     = await pdf.getPage(i);
+        const vp       = page.getViewport({ scale: 1 });
+        const scale    = (largeur / vp.width) * dpr;
         const viewport = page.getViewport({ scale });
 
         const canvas  = document.createElement('canvas');
         canvas.className = 'pdf-page-canvas';
+        // Taille réelle en pixels (haute résolution)
         canvas.width  = viewport.width;
         canvas.height = viewport.height;
+        // Taille affichée en CSS (divisée par dpr pour revenir à la bonne taille)
+        canvas.style.width  = (viewport.width  / dpr) + 'px';
+        canvas.style.height = (viewport.height / dpr) + 'px';
         wrapper.appendChild(canvas);
 
         await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
