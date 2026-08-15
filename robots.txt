@@ -1,0 +1,8 @@
+# robots.txt — https://lafermebermond.com/
+# Tous les robots sont les bienvenus.
+
+User-agent: *
+Allow: /
+Disallow: /index.php
+
+Sitemap: https://lafermebermond.com/sitemap.xml

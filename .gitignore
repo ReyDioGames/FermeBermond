@@ -1,0 +1,9 @@
+# Identifiants et fichiers sensibles - ne jamais committer
+code.txt
+Nouveau Document texte.txt
+*.env
+ftp*.txt
+
+# Divers
+Thumbs.db
+.DS_Store

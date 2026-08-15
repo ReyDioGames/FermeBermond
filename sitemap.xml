@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://lafermebermond.com/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lafermebermond.com/images/og-image.jpg</image:loc>
+      <image:title>La Ferme Bermond, ferme urbaine et pédagogique à Nice</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lafermebermond.com/images/IMG_20250528_102123.webp</image:loc>
+      <image:title>Le potager de la Ferme Bermond au printemps</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lafermebermond.com/images/Cuisine%20(1).webp</image:loc>
+      <image:title>La cuisine solidaire de la Ferme Bermond</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lafermebermond.com/images/LE18%20(8).webp</image:loc>
+      <image:title>Le « 18 », site d'agroforesterie de la Ferme Bermond</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://lafermebermond.com/LettreOuverte.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

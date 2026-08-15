@@ -3,1318 +3,1239 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="La Ferme Bermond à Nice&nbsp;: ferme urbaine, espace vert pédagogique, activités éducatives, maraîchage durable et ateliers solidaires.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Ferme Bermond - Ferme Urbaine et Espace Vert à Nice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>La Ferme Bermond — Ferme urbaine et pédagogique à Nice</title>
+    <meta name="description" content="Ferme urbaine et pédagogique à Nice depuis 1969 : potager en permaculture, 200 animaux, ateliers cuisine et compostage. Visites du lundi au vendredi.">
+    <meta name="author" content="La Ferme Bermond – Les amis de Vincent">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#102b16">
     <link rel="canonical" href="https://lafermebermond.com/">
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="La Ferme Bermond">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://lafermebermond.com/">
+    <meta property="og:title" content="La Ferme Bermond — Ferme urbaine et pédagogique à Nice">
+    <meta property="og:description" content="Depuis 1969 aux Moulins : potager en permaculture, 200 animaux, cuisine solidaire et ateliers pour tous. Ouvert du lundi au vendredi, entrée à partir d'1 €.">
+    <meta property="og:image" content="https://lafermebermond.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Le potager et les serres de la Ferme Bermond à Nice">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La Ferme Bermond — Ferme urbaine et pédagogique à Nice">
+    <meta name="twitter:description" content="Depuis 1969 aux Moulins : potager en permaculture, 200 animaux, cuisine solidaire et ateliers pour tous.">
+    <meta name="twitter:image" content="https://lafermebermond.com/images/og-image.jpg">
+
+    <!-- Icônes -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Ressources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="images/Background1.webp" fetchpriority="high">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,700&family=Source+Sans+3:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Ajoutez ce CSS pour les effets de transition de visibilité */
-        section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
 
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <script>document.documentElement.classList.add('js');</script>
 
+    <!-- Données structurées -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["NGO", "TouristAttraction"],
+          "@id": "https://lafermebermond.com/#organisation",
+          "name": "La Ferme Bermond – Les amis de Vincent",
+          "alternateName": "La Ferme Bermond",
+          "url": "https://lafermebermond.com/",
+          "logo": "https://lafermebermond.com/images/icon-512.png",
+          "image": "https://lafermebermond.com/images/og-image.jpg",
+          "description": "Ferme urbaine, pédagogique et solidaire située dans le quartier des Moulins à Nice. Fondée en 1969, elle associe maraîchage en permaculture, éducation populaire, cuisine solidaire et compostage de quartier.",
+          "foundingDate": "1969",
+          "founder": { "@type": "Person", "name": "Vincent Bermond" },
+          "slogan": "Cultiver, cuisiner, partager",
+          "areaServed": { "@type": "City", "name": "Nice" },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4 boulevard Paul Montel",
+            "addressLocality": "Nice",
+            "postalCode": "06200",
+            "addressRegion": "Alpes-Maritimes",
+            "addressCountry": "FR"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 43.671910, "longitude": 7.209352 },
+          "hasMap": "https://maps.google.com/?cid=6603295380374589011",
+          "isAccessibleForFree": false,
+          "publicAccess": true,
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }],
+          "knowsAbout": ["agriculture urbaine", "permaculture", "agriculture syntropique", "compostage", "économie sociale et solidaire", "éducation à l'environnement"],
+          "sameAs": [
+            "https://www.facebook.com/lafermebermond",
+            "https://www.instagram.com/la_ferme_bermond/",
+            "https://www.youtube.com/channel/UCjIxEYve57O7RGvJxjgMUSw",
+            "https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://lafermebermond.com/#site",
+          "url": "https://lafermebermond.com/",
+          "name": "La Ferme Bermond",
+          "inLanguage": "fr-FR",
+          "publisher": { "@id": "https://lafermebermond.com/#organisation" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://lafermebermond.com/#page",
+          "url": "https://lafermebermond.com/",
+          "name": "La Ferme Bermond — Ferme urbaine et pédagogique à Nice",
+          "isPartOf": { "@id": "https://lafermebermond.com/#site" },
+          "about": { "@id": "https://lafermebermond.com/#organisation" },
+          "inLanguage": "fr-FR",
+          "primaryImageOfPage": "https://lafermebermond.com/images/og-image.jpg"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://lafermebermond.com/#faq",
+          "isPartOf": { "@id": "https://lafermebermond.com/#page" },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Où se trouve la Ferme Bermond ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "La ferme se situe au 4 boulevard Paul Montel, 06200 Nice, dans le quartier des Moulins (Nice Ouest). Elle est implantée à un carrefour stratégique, à proximité de l'aéroport, de la gare SNCF, du tramway, de la gare routière et du Marché d'Intérêt National." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quels sont les horaires d'ouverture de la Ferme Bermond ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "La ferme est ouverte du lundi au vendredi, de 9 h jusqu'à la tombée de la nuit." }
+            },
+            {
+              "@type": "Question",
+              "name": "Faut-il payer pour visiter la ferme ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "L'accès se fait via une adhésion. L'adhésion visiteur, symbolique, coûte 1 € et donne accès à la ferme, aux repas et aux produits. L'adhésion bienfaiteur est de 20 € par an et ouvre droit à des tarifs réduits. L'adhésion bénévole est gratuite en échange d'une participation régulière aux activités." }
+            },
+            {
+              "@type": "Question",
+              "name": "Peut-on venir en famille ou avec une classe ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Oui. La ferme accueille environ 3 000 élèves scolaires chaque année ainsi que les familles, autour d'ateliers pédagogiques : découverte du potager, soin des animaux, cuisine anti-gaspillage et sensibilisation à l'environnement." }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment devenir bénévole à la Ferme Bermond ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "L'adhésion bénévole est gratuite et donne droit à des tarifs privilégiés, en échange d'une participation régulière à l'entretien du site et aux activités. Il suffit de nous contacter via le formulaire de la page Visiter la ferme." }
+            },
+            {
+              "@type": "Question",
+              "name": "Peut-on apporter ses déchets verts pour le compostage ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Oui. La ferme dispose d'une zone de compostage ouverte à toutes les habitantes et à tous les habitants du quartier pour la gestion des déchets verts." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quels produits peut-on trouver à la Ferme Bermond ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Des légumes et aromatiques de saison, des fruits (cerises, abricots, figues, kakis, nèfles, poires, prunes, agrumes), des tubercules et céréales, des œufs frais de poules, oies, canes et cailles, ainsi que des confitures, gelées, sirops et sauces préparés avec les récoltes." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <header>
-        <div class="containerS">
-            
-            <div class="logo-titre">
-                <a href="index.html">
-                    <img src="images/Texto.webp" alt="Ferme Bermond">
-                </a>
-            </div>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
-                
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#histoire">Histoire</a></li>
-                    <li><a href="#but">Missions & Vision</a></li>
-                    <li><a href="#Axe">Axes de travail</a></li>
-                    <li><a href="#le18">Le "&nbsp;18&nbsp;"</a></li>
-                    <li><a href="#assiete">De la Terre à l'Assiette</a></li>
-                    <li><a href="#activites">Activités & Produits</a></li>
-                    <li><a href="#rejoindre">Nous Rejoindre</a></li>
-                    <li><a href="#chiffres">Chiffres</a></li>
-                    <li><a href="#nous">On parle de nous</a></li>
-                    <li><a href="#visite">Visite</a></li>
+    <!-- Sprite d'icônes -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.55-.14-2.84-.14C12 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16m0 2.16c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.18.4-.55.22-.94.47-1.35.88-.41.41-.66.8-.88 1.35-.16.41-.35 1.03-.4 2.18-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05 1.15.24 1.77.4 2.18.22.55.47.94.88 1.35.41.41.8.66 1.35.88.41.16 1.03.35 2.18.4 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.18-.4.55-.22.94-.47 1.35-.88.41-.41.66-.8.88-1.35.16-.41.35-1.03.4-2.18.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.4-2.18a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.18-.4-1.24-.06-1.61-.07-4.75-.07m0 3.68a6 6 0 1 1 0 12 6 6 0 0 1 0-12m0 9.9a3.9 3.9 0 1 0 0-7.8 3.9 3.9 0 0 0 0 7.8m7.65-10.14a1.4 1.4 0 1 1-2.8 0 1.4 1.4 0 0 1 2.8 0"/></symbol>
+        <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M21.58 7.19a2.51 2.51 0 0 0-1.77-1.78C18.25 5 12 5 12 5s-6.25 0-7.81.41a2.51 2.51 0 0 0-1.77 1.78A26.2 26.2 0 0 0 2 12a26.2 26.2 0 0 0 .42 4.81 2.51 2.51 0 0 0 1.77 1.78C5.75 19 12 19 12 19s6.25 0 7.81-.41a2.51 2.51 0 0 0 1.77-1.78A26.2 26.2 0 0 0 22 12a26.2 26.2 0 0 0-.42-4.81M10 15.02v-6l5.2 3z"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16m.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></symbol>
+        <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M20 12a2 2 0 0 1 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4a2 2 0 0 1 0 4v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 1-2-2M9.5 8.5h5V10h-5zm0 5.5h5v1.5h-5z"/></symbol>
+        <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M6.05 17.95c-2.34-2.34-2.34-6.14 0-8.49C8.4 7.12 20 4 20 4s-3.12 11.6-5.46 13.95c-2.35 2.34-6.15 2.34-8.49 0m1.41-1.41c1.56 1.56 4.1 1.56 5.66 0C14.5 15.15 16.4 8.6 16.4 8.6S9.85 10.5 8.46 11.88c-1.56 1.56-1.56 4.1 0 5.66"/></symbol>
+    </svg>
+
+    <header class="site-header" id="siteHeader">
+        <div class="site-header__inner">
+            <a class="brand" href="#accueil" aria-label="La Ferme Bermond — retour en haut de page">
+                <img src="images/Texto.webp" width="600" height="225" alt="Logo de La Ferme Bermond" fetchpriority="high">
+            </a>
+
+            <nav class="nav" id="mainNav" aria-label="Navigation principale">
+                <ul class="nav__list">
+                    <li><a href="#histoire">Notre histoire</a></li>
+                    <li><a href="#but">Le projet</a></li>
+                    <li><a href="#le18">Le «&nbsp;18&nbsp;»</a></li>
+                    <li><a href="#assiete">De la terre à l'assiette</a></li>
+                    <li><a href="#activites">Activités &amp; produits</a></li>
+                    <li><a href="#chiffres">Chiffres clés</a></li>
+                    <li><a href="#rejoindre">Nous rejoindre</a></li>
+                    <li><a href="#visite">Visiter</a></li>
                 </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+                <div class="nav__mobile-extra">
+                    <a class="btn btn--gold btn--sm" href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" target="_blank" rel="noopener">Faire un don</a>
+                    <a class="btn btn--ghost btn--sm" href="#nous">On parle de nous</a>
+                    <a class="btn btn--ghost btn--sm" href="#faq">Questions fréquentes</a>
                 </div>
             </nav>
 
-            <div class="socials">
-                <a href="https://www.facebook.com/lafermebermond" target="_blank">
-                    <i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/channel/UCjIxEYve57O7RGvJxjgMUSw" target="_blank">
-                    <i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/la_ferme_bermond/" target="_blank">
-                    <i class="fab fa-instagram"></i></a>
+            <div class="header-actions">
+                <div class="socials">
+                    <a href="https://www.facebook.com/lafermebermond" target="_blank" rel="noopener" aria-label="La Ferme Bermond sur Facebook"><svg aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+                    <a href="https://www.instagram.com/la_ferme_bermond/" target="_blank" rel="noopener" aria-label="La Ferme Bermond sur Instagram"><svg aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+                    <a href="https://www.youtube.com/channel/UCjIxEYve57O7RGvJxjgMUSw" target="_blank" rel="noopener" aria-label="La Ferme Bermond sur YouTube"><svg aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+                </div>
+                <a class="btn btn--gold btn--sm" href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" target="_blank" rel="noopener">Faire un don</a>
+                <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </header>
 
+    <main id="contenu">
 
-    <main>
-        <section id="accueil" class="hero">
-            <div class="container">
-                <h1>Bienvenue à <br>La Ferme Bermond</h1>
-                <h4>Ferme Urbaine et Pédagogique<br> Jardin Potager et Centre de Compostage</h4>
-                <a href="#visite" class="btn">Planifiez votre visite</a>
+        <!-- ================= HÉROS ================= -->
+        <section id="accueil" class="hero" aria-labelledby="hero-title">
+            <div class="hero__media" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero__inner">
+                <p class="hero__badge"><b>Depuis 1969</b> Quartier des Moulins, Nice</p>
+                <h1 id="hero-title">La Ferme Bermond<em>ferme urbaine &amp; pédagogique à Nice</em></h1>
+                <p class="hero__lead">
+                    Un potager en permaculture, 200 animaux, une cuisine solidaire et un centre de compostage
+                    ouverts à toutes et à tous, au cœur de Nice&nbsp;Ouest.
+                </p>
+                <div class="hero__cta">
+                    <a class="btn btn--primary" href="#visite">Planifier votre visite</a>
+                    <a class="btn btn--ghost" href="#rejoindre">Devenir adhérent dès 1&nbsp;€</a>
+                </div>
             </div>
         </section>
 
+        <!-- ================= BANDEAU INFOS PRATIQUES ================= -->
+        <aside class="quickbar" aria-label="Informations pratiques">
+            <div class="wrap quickbar__grid">
+                <div class="quickbar__item">
+                    <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+                    <div><span>Adresse</span><strong>4 bd Paul Montel, 06200 Nice</strong></div>
+                </div>
+                <div class="quickbar__item">
+                    <svg aria-hidden="true"><use href="#i-clock"></use></svg>
+                    <div><span>Horaires</span><strong>Lundi – vendredi, 9 h à la tombée de la nuit</strong></div>
+                </div>
+                <div class="quickbar__item">
+                    <svg aria-hidden="true"><use href="#i-ticket"></use></svg>
+                    <div><span>Accès</span><strong>Adhésion visiteur à partir d'1 €</strong></div>
+                </div>
+                <div class="quickbar__item">
+                    <svg aria-hidden="true"><use href="#i-leaf"></use></svg>
+                    <div><span>Le site</span><strong>6 800 m² dont 1 500 m² de maraîchage</strong></div>
+                </div>
+            </div>
+        </aside>
 
-        
-
-
-        <section id="histoire" class="content-box">
-            <div class="container">
-                
-                <div class="cardD">
-                    
-                    <div class="text-container">
-                        <h2>Histoire d'hier…</h2>
-                        <p class="text">
-                            La Ferme Bermond a été fondée en 1969 par Vincent Bermond, brigadier-chef de la police municipale de Nice.<br>
-                            L’initiative voit le jour lorsque la mairie de Nice lui propose de contribuer à la création d'une brigade équestre, donnant naissance au “&nbsp;Cavalier du Mont Boron&nbsp;”.<br>
-                            Ce projet, sans imaginer les implications sociales, économiques et culturelles futures, a permis à la ferme d’évoluer vers un espace social unique.
-                    
-                        </p>
-
-                        
-                    </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage1" src="images/14.webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/14.webp" class="thumb" onclick="changeImage('images/14.webp')">
-                            <img src="images/hier.webp" class="thumb" onclick="changeImage('images/hier.webp')">
-                            <img src="images/16.webp" class="thumb" onclick="changeImage('images/16.webp')">
-                        </div>
-                        
-
-                    </div>
-                    
+        <!-- ================= HISTOIRE ================= -->
+        <section id="histoire" class="section section--cream" aria-labelledby="histoire-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Notre histoire</p>
+                    <h2 id="histoire-title">D'une brigade équestre à une ferme urbaine solidaire</h2>
+                    <p>Plus de cinquante ans d'histoire niçoise, portée par un homme puis par tout un quartier.</p>
                 </div>
 
-                <div class="cardD">
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage2" src="images/AJ.webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/AJ.webp" class="thumb" onclick="changeImage2('images/AJ.webp')">
-                            <img src="images/AJ (2).webp" class="thumb" onclick="changeImage2('images/AJ (2).webp')">
-                            <img src="images/AJ (3).webp" class="thumb" onclick="changeImage2('images/AJ (3).webp')">
-                        </div>
-                        
-                          
+                <div class="split reveal">
+                    <div class="split__body">
+                        <h3>Histoire d'hier…</h3>
+                        <p>
+                            La Ferme Bermond a été fondée en 1969 par Vincent Bermond, brigadier-chef de la police
+                            municipale de Nice. L'initiative voit le jour lorsque la mairie de Nice lui propose de
+                            contribuer à la création d'une brigade équestre, donnant naissance au
+                            «&nbsp;Cavalier du Mont Boron&nbsp;».
+                        </p>
+                        <p>
+                            Ce projet, sans imaginer les implications sociales, économiques et culturelles futures,
+                            a permis à la ferme d'évoluer vers un espace social unique.
+                        </p>
                     </div>
-                    
-                    
-                    
-                    <div class="text-container">
-                    <h2>…et Aujourd'hui</h2>
-                    <p class="text">
-                        Aujourd’hui, elle relie agriculture urbaine, permaculture,
-                        écocitoyenneté, développement durable et économie
-                        sociale et solidaire. <br>Son objectif principal: créer des liens
-                        sociaux et intergénérationnels et promouvoir une
-                        alimentation saine, locale et solidaire. <br>Elle s’inscrit
-                        profondément dans l’histoire du quartier des Moulins, en
-                        tant que lieu à la fois historique et culturel.
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/14.webp" width="1080" height="1080" alt="Les débuts de la Ferme Bermond à Nice dans les années 1970" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/14.webp" aria-current="true" aria-label="Voir la photo : les débuts de la ferme"><img src="images/thumbs/14.webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/hier.webp" aria-label="Voir la photo : la ferme autrefois"><img src="images/thumbs/hier.webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/16.webp" aria-label="Voir la photo : archives de la ferme"><img src="images/thumbs/16.webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
 
-                        <br><br>À la disparition de Vincent Bermond, en décembre 2016,
-                        ses amis initient un processus de transition. <br>Ils s’efforcent
-                        de pérenniser cette initiative d’agriculture urbaine, tout en
-                        réfléchissant aux enjeux environnementaux
-                        contemporains. <br>Leur mot d’ordre&nbsp;: agir collectivement
-                        pour construire un avenir durable. <br>La ferme devient alors
-                        un lieu où l’environnement est au service du social, et
-                        inversement, renforçant sa vocation de créer des
-                        connexions inter-sociales.
-                    </p>
-
+                <div class="split split--reverse reveal">
+                    <div class="split__body">
+                        <h3>…et aujourd'hui</h3>
+                        <p>
+                            Aujourd'hui, elle relie agriculture urbaine, permaculture, écocitoyenneté, développement
+                            durable et économie sociale et solidaire. Son objectif principal&nbsp;: créer des liens
+                            sociaux et intergénérationnels et promouvoir une alimentation saine, locale et solidaire.
+                            Elle s'inscrit profondément dans l'histoire du quartier des Moulins, en tant que lieu à la
+                            fois historique et culturel.
+                        </p>
+                        <p>
+                            À la disparition de Vincent Bermond, en décembre 2016, ses amis initient un processus de
+                            transition. Ils s'efforcent de pérenniser cette initiative d'agriculture urbaine, tout en
+                            réfléchissant aux enjeux environnementaux contemporains. Leur mot d'ordre&nbsp;: agir
+                            collectivement pour construire un avenir durable. La ferme devient alors un lieu où
+                            l'environnement est au service du social, et inversement, renforçant sa vocation de créer
+                            des connexions inter-sociales.
+                        </p>
                     </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/AJ.webp" width="800" height="800" alt="La Ferme Bermond aujourd'hui : jardin partagé et espace de rencontre" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/AJ.webp" aria-current="true" aria-label="Voir la photo : la ferme aujourd'hui"><img src="images/thumbs/AJ.webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (2).webp" aria-label="Voir la photo : vie quotidienne à la ferme"><img src="images/thumbs/AJ (2).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (3).webp" aria-label="Voir la photo : adhérents et bénévoles"><img src="images/thumbs/AJ (3).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
 
-                    
-                
-
-                     <div class="text-container">
-                        
-                        <p class="text">
-                            L’histoire de la ferme repose également sur des questions
-                            fondamentales posées par ses membres: comment habiter
-                            l’espace? Comment lui donner vie? Comment inscrire la
-                            ferme dans l’histoire du quartier et de la ville? <br><br>
-                            Ces réflexions ont mené à la création d’un jardin potager et d’un
-                            espace de rencontres et interactions, favorisant l’intégration
-                            et la participation des personnes.
-
-                            <br><br>Un des grands objectifs de la ferme est de devenir
-                            un espace de cohabitation entre hommes, animaux
-                            et plantes. <br>Elle met en avant des interactions “inter-
-                            sociales, interculturelles et inter-espèces”, où
-                            chacun contribue à un ensemble harmonieux, riche
+                <div class="split reveal">
+                    <div class="split__body">
+                        <p>
+                            L'histoire de la ferme repose également sur des questions fondamentales posées par ses
+                            membres&nbsp;: comment habiter l'espace&nbsp;? Comment lui donner vie&nbsp;? Comment inscrire
+                            la ferme dans l'histoire du quartier et de la ville&nbsp;?
+                        </p>
+                        <p>
+                            Ces réflexions ont mené à la création d'un jardin potager et d'un espace de rencontres et
+                            d'interactions, favorisant l'intégration et la participation des personnes.
+                        </p>
+                        <p>
+                            Un des grands objectifs de la ferme est de devenir un espace de cohabitation entre hommes,
+                            animaux et plantes. Elle met en avant des interactions «&nbsp;inter-sociales,
+                            interculturelles et inter-espèces&nbsp;», où chacun contribue à un ensemble harmonieux, riche
                             en complémentarités.
                         </p>
-
-                        
                     </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage3" src="images/AJ (4).webp" alt="Image principale" class="responsive-img80">
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/AJ (4).webp" width="800" height="800" alt="Cohabitation entre humains, animaux et plantes à la Ferme Bermond" loading="lazy" decoding="async">
                         </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/AJ (4).webp" class="thumb" onclick="changeImage3('images/AJ (4).webp')">
-                            <img src="images/AJ (5).webp" class="thumb" onclick="changeImage3('images/AJ (5).webp')">
-                            <img src="images/AJ (1).webp" class="thumb" onclick="changeImage3('images/AJ (1).webp')">
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (4).webp" aria-current="true" aria-label="Voir la photo : cohabitation à la ferme"><img src="images/thumbs/AJ (4).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (5).webp" aria-label="Voir la photo : le jardin potager"><img src="images/thumbs/AJ (5).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (1).webp" aria-label="Voir la photo : espace de rencontre"><img src="images/thumbs/AJ (1).webp" width="200" height="200" alt="" loading="lazy"></button>
                         </div>
-                        
+                    </figure>
+                </div>
+
+                <div class="split split--reverse reveal">
+                    <div class="split__body">
+                        <p>
+                            En 2017, la ferme devient une association sous le nom de «&nbsp;La Ferme Bermond - Les amis
+                            de Vincent&nbsp;». Ce tournant associatif marque le début d'un développement progressif grâce
+                            à l'implication des bénévoles, adhérents, et aux soutiens publics et privés. Ce travail
+                            quotidien fait de la ferme un espace d'intégration intergénérationnel et interculturel, et un
+                            lieu de transmission de savoir-faire.
+                        </p>
+                        <p>
+                            Entre 2022 et 2024, dans le cadre du programme gouvernemental «&nbsp;France Relance&nbsp;»,
+                            la ferme bénéficie d'une rénovation globale, grâce à des partenariats avec la Ville de Nice,
+                            la Métropole, la Région Sud, la CAF et plusieurs fondations privées. Les travaux réalisés
+                            incluent&nbsp;:
+                        </p>
+                        <ol>
+                            <li>La création d'une cuisine solidaire et participative, ainsi que d'un espace de formation.</li>
+                            <li>La rénovation des infrastructures techniques, administratives et pour les animaux.</li>
+                            <li>L'installation de panneaux photovoltaïques et de systèmes d'irrigation durables.</li>
+                        </ol>
                     </div>
-                    
-                
-                    <div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/AJ (6).webp" width="800" height="800" alt="Les infrastructures rénovées de la Ferme Bermond entre 2022 et 2024" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (6).webp" aria-current="true" aria-label="Voir la photo : infrastructures rénovées"><img src="images/thumbs/AJ (6).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (7).webp" aria-label="Voir la photo : chantier de rénovation"><img src="images/thumbs/AJ (7).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/AJ (8).webp" aria-label="Voir la photo : nouveaux espaces de la ferme"><img src="images/thumbs/AJ (8).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
-                        <div class="image-container">
-                            <img id="mainImage" src="images/AJ (6).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/AJ (6).webp" class="thumb" onclick="changeImage1('images/AJ (6).webp')">
-                            <img src="images/AJ (7).webp" class="thumb" onclick="changeImage1('images/AJ (7).webp')">
-                            <img src="images/AJ (8).webp" class="thumb" onclick="changeImage1('images/AJ (8).webp')">
-                        </div>
-                        
-                          
+        <!-- ================= MISSION & VISION ================= -->
+        <section id="but" class="section section--white" aria-labelledby="but-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Missions &amp; vision</p>
+                    <h2 id="but-title">Le premier espace social écocitoyen du bassin niçois</h2>
+                </div>
+
+                <div class="split reveal">
+                    <div class="split__body">
+                        <h3>Notre mission</h3>
+                        <p>
+                            La ferme est un lieu d'éducation populaire, ouvert à tous, créant des liens
+                            intergénérationnels, multiculturels et sociaux. Située dans un quartier prioritaire et à un
+                            carrefour stratégique (aéroport, gare SNCF, tram, gare routière, Marché d'Intérêt National),
+                            elle offre un accès unique à une diversité de publics.
+                        </p>
+                        <p>
+                            Son objectif est de promouvoir et codévelopper des projets innovants associant la protection
+                            de l'environnement, l'éducation et le développement social et économique. Ces initiatives
+                            sont réalisées en partenariat avec des acteurs publics et privés, autour de thèmes tels que
+                            le maraîchage, la permaculture et les écosystèmes durables.
+                        </p>
                     </div>
-                    
-                    
-                    
-                    <div class="text-container">
-                    
-                    <p class="text">
-                        En 2017, la ferme devient une association sous le nom de «
-                        La Ferme Bermond - Les amis de Vincent&nbsp;». Ce tournant
-                        associatif marque le début d’un développement progressif
-                        grâce à l'implication des bénévoles, adhérents, et aux
-                        soutiens publics et privés. <br>Ce travail quotidien fait de la
-                        ferme un espace d’intégration intergénérationnel et
-                        interculturel, et un lieu de transmission de savoir-faire.<br><br>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/MIS (1).webp" width="800" height="800" alt="Atelier d'éducation populaire à la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/MIS (1).webp" aria-current="true" aria-label="Voir la photo : atelier d'éducation populaire"><img src="images/thumbs/MIS (1).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/MIS (2).webp" aria-label="Voir la photo : accueil des publics"><img src="images/thumbs/MIS (2).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/FB (45).webp" aria-label="Voir la photo : activité collective"><img src="images/thumbs/FB (45).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
 
-                        Entre 2022 et 2024, dans le cadre du programme gouvernemental «&nbsp;France Relance&nbsp;», la
-                        ferme bénéficie d’une rénovation globale, grâce à des partenariats avec la Ville de Nice,
-                        la Métropole, la Région Sud, la CAF et plusieurs fondations privées. Les travaux réalisés
-                        incluent: <br>
-                        <br>1- La création d’une cuisine solidaire et participative, ainsi que d’un espace de
-                        formation . 
-                        <br>2- La rénovation des infrastructures techniques, administratives et pour les
-                        animaux. 
-                        <br>3- L’installation de panneaux photovoltaïques et de systèmes d’irrigation
-                        durables
+                <div class="split split--reverse reveal">
+                    <div class="split__body">
+                        <h3>Protéger le vivant</h3>
+                        <p>
+                            En tant qu'acteur de la protection de la nature et de la biodiversité, la ferme s'appuie sur
+                            des savoirs ancestraux et des pratiques agroécologiques telles que la milpa ou la syntropie.
+                            Cette méthode favorise la biomasse, la création de microclimats et le développement de la
+                            faune et de la flore, tout en améliorant les sols et en réduisant les besoins en eau.
+                        </p>
+                        <p>
+                            La ferme sensibilise différents acteurs et participants aux enjeux liés à l'écocitoyenneté,
+                            au développement durable, à la protection de la biodiversité, au bien-vivre et à la
+                            transition écologique. Elle met un point d'honneur à initier les enfants à ces questions pour
+                            encourager la curiosité, le respect du vivant et la transmission de valeurs humaines,
+                            sociales et éthiques.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/MIS (4).webp" width="800" height="800" alt="Pratiques agroécologiques et biodiversité à la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/MIS (4).webp" aria-current="true" aria-label="Voir la photo : agroécologie"><img src="images/thumbs/MIS (4).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/MIS (5).webp" aria-label="Voir la photo : biodiversité du site"><img src="images/thumbs/MIS (5).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/MIS (6).webp" aria-label="Voir la photo : sensibilisation à l'environnement"><img src="images/thumbs/MIS (6).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="section-head reveal" style="margin-top: var(--s-9)">
+                    <h3>Le Pré Apprentissage Maison (P.A.M.)</h3>
+                    <p>La ferme s'engage à promouvoir le bénévolat grâce à des formations inclusives axées sur trois pôles.</p>
+                </div>
+
+                <div class="cards reveal">
+                    <article class="card">
+                        <div class="card__media">
+                            <img src="images/FB (47).webp" width="800" height="800" alt="Bénévole nourrissant les animaux de la ferme" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h3>Soins aux animaux</h3>
+                            <p>Les soins quotidiens des animaux&nbsp;: préparation des espaces, distribution de nourriture, entretien des enclos.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media">
+                            <img src="images/FB (10).webp" width="800" height="800" alt="Atelier de cuisine solidaire à la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h3>Cuisine &amp; transformation</h3>
+                            <p>La cuisine et la transformation des produits&nbsp;: collecte, préparation, service, entretien.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media">
+                            <img src="images/FB (58).webp" width="800" height="800" alt="Semis et plantations dans le potager de la ferme" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card__body">
+                            <h3>Maraîchage</h3>
+                            <p>Le maraîchage&nbsp;: semis, plantations, entretien des cultures et récoltes.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="split reveal" style="margin-top: var(--s-9)">
+                    <div class="split__body">
+                        <h3>Un modèle économique solidaire</h3>
+                        <p>
+                            Grâce au soutien des pouvoirs publics (État, Région, Département, Métropole, Ville de Nice,
+                            CAF), la ferme contribue à l'insertion sociale et professionnelle, en proposant des emplois,
+                            des stages et des opportunités pour les jeunes et adultes en alternance, apprentissage ou
+                            professionnalisation.
+                        </p>
+                        <p>
+                            Elle construit un modèle économique, social et associatif fondé sur la coopération entre
+                            acteurs de l'économie sociale et solidaire, entreprises, associations, fondations et pouvoirs
+                            publics. Son ambition&nbsp;: atteindre une autosuffisance financière, nourricière et
+                            énergétique.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/Cuisine (5).webp" width="800" height="800" alt="La cuisine solidaire et participative de la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/Cuisine (5).webp" aria-current="true" aria-label="Voir la photo : la cuisine solidaire"><img src="images/thumbs/Cuisine (5).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/Cuisine (4).webp" aria-label="Voir la photo : préparation des repas"><img src="images/thumbs/Cuisine (4).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/Cuisine (6).webp" aria-label="Voir la photo : repas partagé"><img src="images/thumbs/Cuisine (6).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="split split--reverse reveal">
+                    <div class="split__body">
+                        <h3>Nos projets à venir</h3>
+                        <p>
+                            Dans ses réflexions, la ferme vise une symbiose parfaite entre végétaux, minéraux et animaux,
+                            adaptée à la perspective du réchauffement climatique grâce à des plantations nécessitant de
+                            moindres besoins en eau, à la végétalisation des espaces urbains et à la promotion de
+                            relations harmonieuses entre humains et nature.
+                        </p>
+                        <p>
+                            Elle prévoit aussi le développement de son centre de compostage, d'un séchoir, d'un four
+                            solaire, d'un rucher et d'un système d'aquaponie. Ces projets s'inscrivent dans une démarche
+                            innovante au service de la transition socio-écologique.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/FB (27).webp" width="800" height="800" alt="Projets de transition écologique à la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/FB (27).webp" aria-current="true" aria-label="Voir la photo : projets de la ferme"><img src="images/thumbs/FB (27).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/FB (18).webp" aria-label="Voir la photo : aménagements du site"><img src="images/thumbs/FB (18).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/FB (54).webp" aria-label="Voir la photo : espaces cultivés"><img src="images/thumbs/FB (54).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= AXES DE TRAVAIL ================= -->
+        <section id="Axe" class="section section--cream" aria-labelledby="axe-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Ce que nous faisons</p>
+                    <h2 id="axe-title">Nos six axes de travail</h2>
+                </div>
+
+                <div class="cards cards--4 reveal">
+                    <article class="card card--axis">
+                        <div class="card__media"><img src="images/FB (41).webp" width="800" height="800" alt="Séance d'éducation populaire à la Ferme Bermond" loading="lazy" decoding="async"></div>
+                        <div class="card__body"><h3>L'éducation populaire</h3></div>
+                    </article>
+                    <article class="card card--axis">
+                        <div class="card__media"><img src="images/Axe (2).webp" width="290" height="290" alt="Activités pratiques au potager de la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body"><h3>Les activités pratiques</h3></div>
+                    </article>
+                    <article class="card card--axis">
+                        <div class="card__media"><img src="images/Sensibilisation.webp" width="290" height="290" alt="Sensibilisation à l'environnement auprès des enfants" loading="lazy" decoding="async"></div>
+                        <div class="card__body"><h3>La sensibilisation à l'environnement</h3></div>
+                    </article>
+                    <article class="card card--axis">
+                        <div class="card__media"><img src="images/MIS (3).webp" width="800" height="800" alt="Événement partenaire organisé à la Ferme Bermond" loading="lazy" decoding="async"></div>
+                        <div class="card__body"><h3>Les partenariats et événements</h3></div>
+                    </article>
+                    <article class="card card--axis">
+                        <div class="card__media"><img src="images/Axe (5).webp" width="290" height="290" alt="Activité d'économie sociale et solidaire à la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body"><h3>L'économie sociale et solidaire</h3></div>
+                    </article>
+                    <article class="card card--axis">
+                        <div class="card__media"><img src="images/FB (49).webp" width="800" height="800" alt="Atelier transgénérationnel et multiculturel à la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body"><h3>Les ateliers transgénérationnels et multiculturels</h3></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= LE 18 ================= -->
+        <section id="le18" class="section section--white" aria-labelledby="le18-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Notre second site</p>
+                    <h2 id="le18-title">Le «&nbsp;18&nbsp;», futur poumon vert de Nice Ouest</h2>
+                    <p>2 000 tonnes d'enrobés retirées, 1 900 tonnes de terre apportées&nbsp;: la renaissance d'un site urbain abandonné.</p>
+                </div>
+
+                <div class="split reveal">
+                    <div class="split__body">
+                        <p>
+                            Le «&nbsp;18&nbsp;», situé à proximité immédiate de la Ferme Bermond, illustre la
+                            transformation exemplaire d'un ancien site urbain abandonné. Son nom fait référence à
+                            l'adresse des anciens bâtiments de la «&nbsp;Maison pour Tous&nbsp;», qui occupaient
+                            précédemment le 18 boulevard Paul Montel.
+                        </p>
+                        <p>
+                            La réalisation de ce projet a été rendue possible grâce à une collaboration entre la Ferme
+                            Bermond, la Ville de Nice, le Conseil Départemental des Alpes-Maritimes et Unis-Cité.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/LE18 (2).webp" width="800" height="800" alt="Le site du « 18 » boulevard Paul Montel avant transformation" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (2).webp" aria-current="true" aria-label="Voir la photo : le site du 18"><img src="images/thumbs/LE18 (2).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (1).webp" aria-label="Voir la photo : chantier du 18"><img src="images/thumbs/LE18 (1).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (3).webp" aria-label="Voir la photo : aménagement du 18"><img src="images/thumbs/LE18 (3).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="split split--reverse reveal">
+                    <div class="split__body">
+                        <p>
+                            Dans le cadre du programme Green Deal 2024, intitulé «&nbsp;50 heures Jeunes Engagés pour le
+                            Climat&nbsp;», 89 jeunes âgés de 18 à 24 ans et 6 jeunes en service civique ont contribué
+                            activement à la re-végétalisation du site. Encadrés par les équipes de la Ferme Bermond et
+                            épaulés par des bénévoles, ces jeunes ont joué un rôle clé dans cette transformation
+                            écologique.
+                        </p>
+                        <p>
+                            Prévu pour devenir un véritable poumon vert de Nice Ouest d'ici 2025/2026, Le
+                            «&nbsp;18&nbsp;» soutient une agriculture syntropique sur sol vivant. Ce système repose sur
+                            la coopération naturelle entre plantes, microfaunes et invertébrés afin de recycler les
+                            nutriments sans recours aux intrants artificiels.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/LE18 (4).webp" width="800" height="800" alt="Jeunes engagés pour le climat re-végétalisant le site du « 18 »" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (4).webp" aria-current="true" aria-label="Voir la photo : jeunes engagés pour le climat"><img src="images/thumbs/LE18 (4).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (5).webp" aria-label="Voir la photo : plantations du 18"><img src="images/thumbs/LE18 (5).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (6).webp" aria-label="Voir la photo : chantier participatif"><img src="images/thumbs/LE18 (6).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="split reveal">
+                    <div class="split__body">
+                        <p>
+                            Après le retrait de 2 000 tonnes d'enrobés, l'ajout de 1 900 tonnes de terre et de 160 m³ de
+                            broyat végétal, les vers de terre, notamment, contribuent désormais au renouvellement naturel
+                            du milieu. Le projet intègre également des innovations majeures telles que l'implantation
+                            d'arbres fruitiers, la création d'un bassin naturel et l'installation d'un système
+                            d'irrigation goutte-à-goutte.
+                        </p>
+                        <p>
+                            Ces avancées enrichissent ce modèle d'agroforesterie, transformant le site en une plateforme
+                            pédagogique. Favorisant la syntropie et l'agroécologie, Le «&nbsp;18&nbsp;» offre un cadre
+                            propice à l'apprentissage de l'écocitoyenneté et au développement durable. Ces efforts
+                            s'inscrivent dans le contrat de ville métropolitain «&nbsp;Engagements Quartiers
+                            2024-2030&nbsp;». En renouvelant la relation entre les humains et leur environnement, Le
+                            «&nbsp;18&nbsp;» incarne une vision harmonieuse et résiliente où chaque geste compte pour
+                            renforcer la dynamique d'un territoire durable.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/LE18 (8).webp" width="800" height="800" alt="Agroforesterie et bassin naturel sur le site du « 18 » à Nice" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (8).webp" aria-current="true" aria-label="Voir la photo : agroforesterie au 18"><img src="images/thumbs/LE18 (8).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (9).webp" aria-label="Voir la photo : bassin naturel"><img src="images/thumbs/LE18 (9).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/LE18 (7).webp" aria-label="Voir la photo : arbres fruitiers du 18"><img src="images/thumbs/LE18 (7).webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DE LA TERRE À L'ASSIETTE ================= -->
+        <section id="assiete" class="section section--cream" aria-labelledby="assiete-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Cultiver, cuisiner, partager</p>
+                    <h2 id="assiete-title">De la terre à l'assiette</h2>
+                    <p>
+                        Un fil conducteur reliant les sols fertiles aux cuisines accueillantes, les savoir-faire du
+                        terroir aux engagements contemporains.
                     </p>
-
-                    </div>
-
-                    
                 </div>
 
-                
-
-
-            </div>
-        </section>
-
-        <section id="but" class="content-box">
-            <div class="container">
-               
-                <div class="cardD">
-
-                    <div>
-                        <h2>Mission</h2>
-                        <p>La ferme devient un lieu d'éducation populaire,
-                        ouvert à tous, créant des liens intergénérationnels,
-                        multiculturels et sociaux. Elle se positionne
-                        comme le premier espace social écocitoyen du
-                        bassin niçois. Située dans un quartier prioritaire et
-                        à un carrefour stratégique (Aéroport, Gare SNCF,
-                        Tram, Gare routière, Marché d’Intérêt National), elle
-                        offre un accès unique à une diversité de publics. <br><br>
-
-                        L’objectif de la ferme est de promouvoir et
-                        codévelopper des projets innovants associant la
-                        protection de l’environnement, l’éducation et le
-                        développement social et économique. Ces
-                        initiatives sont réalisées en partenariat avec des
-                        acteurs publics et privés, autour de thèmes tels que
-                        le maraîchage, la permaculture et les écosystèmes
-                        durables.
+                <div class="split reveal">
+                    <div class="split__body">
+                        <p>
+                            «&nbsp;De la terre à l'assiette&nbsp;» crée des connexions profondes entre humains, plantes,
+                            animaux et écosystèmes, nourrissant non seulement le corps, mais aussi le lien social, les
+                            apprentissages et les émotions.
+                        </p>
+                        <p>
+                            Depuis 2023, dans le cadre de la médiation socio-culturelle, deux postes salariés à temps
+                            plein, financés à 80&nbsp;% par l'État, ont été créés pour animer et enrichir ce projet
+                            éducatif axé sur le maraîchage urbain et la transformation alimentaire solidaire.
                         </p>
                     </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage4" src="images/MIS (1).webp" alt="Image principale" class="responsive-img80">
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/Cuisine (1).webp" width="800" height="800" alt="Repas préparé avec les légumes du potager de la Ferme Bermond" loading="lazy" decoding="async">
                         </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/MIS (1).webp" class="thumb" onclick="changeImage4('images/MIS (1).webp')">
-                            <img src="images/MIS (2).webp" class="thumb" onclick="changeImage4('images/MIS (2).webp')">
-                            <img src="images/FB (45).webp" class="thumb" onclick="changeImage4('images/FB (45).webp')">
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/Cuisine (1).webp" aria-current="true" aria-label="Voir la photo : repas de la ferme"><img src="images/thumbs/Cuisine (1).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/Cuisine (2).webp" aria-label="Voir la photo : atelier culinaire"><img src="images/thumbs/Cuisine (2).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/Cuisine (3).webp" aria-label="Voir la photo : produits transformés"><img src="images/thumbs/Cuisine (3).webp" width="200" height="200" alt="" loading="lazy"></button>
                         </div>
-                        
-                          
-                    </div>
-
-                
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage5" src="images/MIS (4).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/MIS (4).webp" class="thumb" onclick="changeImage5('images/MIS (4).webp')">
-                            <img src="images/MIS (5).webp" class="thumb" onclick="changeImage5('images/MIS (5).webp')">
-                            <img src="images/MIS (6).webp" class="thumb" onclick="changeImage5('images/MIS (6).webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                    <div>
-                        
-                        <p>En tant qu’acteur de la protection de la nature et
-                        de la biodiversité, la ferme s’appuie sur des
-                        savoirs ancestraux et des pratiques
-                        agroécologiques telles que la milpa ou
-                        syntropie. Cette méthode favorise la biomasse,
-                        la création de microclimats et le développement
-                        de la faune et la flore, tout en améliorant les sols
-                        et en réduisant les besoins en eau.<br><br>
-
-                        La ferme sensibilise différents acteurs et
-                        participants aux enjeux liés à l’écocitoyenneté,
-                        au développement durable, à la protection de
-                        biodiversité, au bien-vivre et à la transition
-                        écologique. Elle met un point d’honneur à initier
-                        les enfants à ces questions pour encourager la
-                        curiosité, le respect du vivant et la transmission
-                        de valeurs humaines, sociales et éthiques.
-                        </p>
-                    </div>
-
-                    
-
+                    </figure>
                 </div>
 
-
-
-                <div class="cardPlusBlanc">
-                    <h2>Vision</h2>
-                    <h3>La ferme s’engage à promouvoir le bénévolat grâce aux formations inclusives «&nbsp;Pré Apprentissage Maison (P.A.M.)&nbsp;» axées sur&nbsp;:</h3>
-
-
-                    <div class="grid">
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/FB (47).webp" alt="soins" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>soins</h3>
-                                <h4>Les soins quotidiens des
-                                animaux&nbsp;: préparation des
-                                espaces, distribution de
-                                nourriture, entretien des
-                                enclos</h4>
-                            </div>
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/FB (10).webp" alt="Cuisine" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Cuisine</h3>
-                                <h4>La cuisine et la
-                                transformation des produits&nbsp;:
-                                collecte/recueil,
-                                préparation, service,
-                                entretien.</h4>
-                            </div>
-                            
-                            
-                        </div>
-
-
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/FB (58).webp" alt="Maraichage" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Maraîchage</h3>
-                                <h4>Le maraîchage&nbsp;: semis,
-                                plantations, entretien des
-                                cultures, récoltes</h4>
-                            </div>
-                            
-                            
-                        </div>
-                        
-                    
-                    </div>
-
-            
-
-                <div class="cardD">
-
-                <div>
-                    
-                    <p>Grâce au soutien des pouvoirs publics
-                    (État, Région, Département, Métropole,
-                    Ville de Nice, CAF), la Ferme contribue à
-                    l’insertion sociale et professionnelle, en
-                    proposant des emplois, des stages et des
-                    opportunités pour les jeunes et adultes en
-                    alternance, apprentissage ou
-                    professionnalisation.<br><br>
-
-                    La Ferme construit un modèle
-                    économique, social et associatif fondé
-                    sur la coopération entre acteurs de
-                    l’économie sociale et solidaire,
-                    entreprises, associations, fondations et
-                    pouvoirs publics. Son ambition&nbsp;:
-                    atteindre une autosuffisance financière,
-                    nourricière et énergétique.
-                    </p>
-                </div>
-
-                <div>
-
-                    <div class="image-container">
-                        <img id="mainImage6" src="images/Cuisine (5).webp" alt="Image principale" class="responsive-img80">
-                    </div>
-        
-                    <div class="thumbnails">
-                        <img src="images/Cuisine (5).webp" class="thumb" onclick="changeImage6('images/Cuisine (5).webp')">
-                        <img src="images/Cuisine (4).webp" class="thumb" onclick="changeImage6('images/Cuisine (4).webp')">
-                        <img src="images/Cuisine (6).webp" class="thumb" onclick="changeImage6('images/Cuisine (6).webp')">
-                    </div>
-                    
-                        
-                </div>
-
-                    
-
-            
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage7" src="images/FB (27).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/FB (27).webp" class="thumb" onclick="changeImage7('images/FB (27).webp')">
-                            <img src="images/FB (18).webp" class="thumb" onclick="changeImage7('images/FB (18).webp')">
-                            <img src="images/FB (54).webp" class="thumb" onclick="changeImage7('images/FB (54).webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                    <div>
-                        
-                        <p>Dans ses réflexions, elle vise une symbiose
-                        parfaite entre végétaux, minéraux et
-                        animaux, adaptée à la perspective du
-                        réchauffement climatique grâce à des
-                        plantations nécessitant de moindres
-                        besoins en eau, à végétaliser les espaces
-                        urbains et à promouvoir des relations
-                        harmonieuses entre humains et nature.<br><br>
-
-                        La Ferme prévoit aussi le développement de
-                        son centre de compostage, d’un séchoir,
-                        d’un four solaire, d’un rucher et d’un
-                        système d’aquaponie. Ces projets
-                        s’inscrivent dans une démarche innovante
-                        au service de la transition socio-écologique.
-                        </p>
-                    </div>
-
-                    
-
-                </div>
-
-
-
-
-        </section>
-
-        <section id="Axe" class="content-box">
-            <div class="container">
-
-                <div class="cardPlusBlanc">
-                    <h2>Nos axes de Travail</h2>
-                    
-                    <div class="grid">
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/FB (41).webp" alt="L’éducation populaire" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>L’éducation populaire</h3>
-                                
-                            </div>
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/Axe (2).webp" alt="Les activités pratiques" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Les activités pratiques</h3>
-                                
-                            </div>
-                            
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/Sensibilisation.webp" alt="La sensibilisation à l’environnement" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>La sensibilisation à l’environnement</h3>
-                                
-                            </div>
-                            
-                            
-                        </div>
-
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/MIS (3).webp" alt="Les partenariats et événements" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Les partenariats et événements</h3>
-                                
-                            </div>
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/Axe (5).webp" alt="L’Économie Sociale et Solidaire" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>L’Économie Sociale et Solidaire</h3>
-                                
-                            </div>
-                            
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/FB (49).webp" alt="Les ateliers transgénérationnels et multiculturels" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Les ateliers transgénérationnels et multiculturels</h3>
-                                
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="le18" class="content-box">
-            <div class="container">
-
-                <div class="cardD">
-                    <div>
-                        <h2>Le «&nbsp;18&nbsp;»</h2>
-                        
-                        <p>Le «&nbsp;18&nbsp;», situé à proximité immédiate de la 
-                        Ferme Bermond, illustre la transformation 
-                        exemplaire d’un ancien site urbain 
-                        abandonné. Son nom fait référence à 
-                        l’adresse des anciens bâtiments de la «&nbsp;
-                        Maison pour Tous&nbsp;», qui occupaient 
-                        précédemment le 18 boulevard Paul 
-                        Montel.<br><br>
-
-                        La réalisation de ce projet a été rendue 
-                        possible grâce à une collaboration entre la 
-                        Ferme Bermond, la Ville de Nice, le 
-                        Conseil Départemental des Alpes
-                        Maritimes et Unis-Cité.
-
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage8" src="images/LE18 (2).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/LE18 (2).webp" class="thumb" onclick="changeImage8('images/LE18 (2).webp')">
-                            <img src="images/LE18 (1).webp" class="thumb" onclick="changeImage8('images/LE18 (1).webp')">
-                            <img src="images/LE18 (3).webp" class="thumb" onclick="changeImage8('images/LE18 (3).webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage9" src="images/LE18 (4).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/LE18 (4).webp" class="thumb" onclick="changeImage9('images/LE18 (4).webp')">
-                            <img src="images/LE18 (5).webp" class="thumb" onclick="changeImage9('images/LE18 (5).webp')">
-                            <img src="images/LE18 (6).webp" class="thumb" onclick="changeImage9('images/LE18 (6).webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                    <div>
-                        <p>Dans le cadre du programme Green Deal 2024, intitulé «&nbsp;50 
-                        heures Jeunes Engagés pour le Climat&nbsp;», 89 jeunes âgés de 18 
-                        à 24 ans et 6 jeunes en service civique ont contribué 
-                        activement à la re-végétalisation du site. Encadrés par les 
-                        équipes de la Ferme Bermond et épaulés par des bénévoles, 
-                        ces jeunes ont joué un rôle clé dans cette transformation 
-                        écologique.<br><br>
-
-                        Prévu pour devenir un véritable poumon vert de 
-                        Nice Ouest d’ici 2025/2026, Le «&nbsp;18&nbsp;» soutient 
-                        une agriculture syntropique sur sol vivant. Ce 
-                        système repose sur la coopération naturelle 
-                        entre plantes, microfaunes et invertébrés afin 
-                        de recycler les nutriments sans recours aux 
-                        intrants artificiels
-
-                        </p>
-                    </div>
-                
-                    <div>
-
-                        <p>Après le retrait de 2 000 tonnes d’enrobés, l’ajout de 1 900 tonnes de 
-                        terre et de 160 m³ de broyat végétal, les vers de terre, notamment, 
-                        contribuent désormais au renouvellement naturel du milieu. Le projet 
-                        intègre également des innovations majeures telles que l’implantation 
-                        d’arbres fruitiers, la création d’un bassin naturel et l’installation d’un 
-                        système d’irrigation goutte-à-goutte.<br><br>
-
-                        Ces avancées enrichissent ce modèle d’agroforesterie, transformant
-                        le site en une plateforme pédagogique. Favorisant la syntropie et
-                        l’agroécologie, Le «&nbsp;18&nbsp;» offre un cadre propice à l’apprentissage de
-                        l’écocitoyenneté et au développement durable. Ces efforts
-                        s’inscrivent dans le contrat de ville Métropolitain «&nbsp;Engagements
-                        Quartiers 2024-2030&nbsp;». En renouvelant la relation entre les humains
-                        et leur environnement, Le «&nbsp;18&nbsp;» incarne une vision harmonieuse et
-                        résiliente où chaque geste compte pour renforcer la dynamique d’un
-                        territoire durable.
-                        </p>
-
-                    </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage10" src="images/LE18 (8).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/LE18 (8).webp" class="thumb" onclick="changeImage10('images/LE18 (8).webp')">
-                            <img src="images/LE18 (9).webp" class="thumb" onclick="changeImage10('images/LE18 (9).webp')">
-                            <img src="images/LE18 (7).webp" class="thumb" onclick="changeImage10('images/LE18 (7).webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <section id="assiete" class="content-box">
-            <div class="container">
-                <div class="cardD">
-                    <div>
-                        <h2>De la terre à l'assiete</h2>
-                        <h3>Cultiver, cuisiner, partager</h3>
-                        <p class="text">«&nbsp;De laterre à l’assiette&nbsp;» représente un fil conducteur reliant les sols
-                        fertiles aux cuisines accueillantes, les savoir-faire du terroir aux
-                        engagements contemporains. Ce projet vivant crée des connexions
-                        profondes entre humains, plantes, animaux et écosystèmes,
-                        nourrissant non seulement le corps, mais aussi le lien social, les
-                        apprentissages et les émotions.
-                        Depuis 2023, dans le cadre de la médiation socio-culturelle, deux 
-                        postes salariés à temps plein, financés à 80% par l'État, ont été 
-                        créés pour animer et enrichir ce projet éducatif axé sur le 
-                        maraîchage urbain et la transformation alimentaire solidaire.
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage11" src="images/Cuisine (1).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/Cuisine (1).webp" class="thumb" onclick="changeImage11('images/Cuisine (1).webp')">
-                            <img src="images/Cuisine (2).webp" class="thumb" onclick="changeImage11('images/Cuisine (2).webp')">
-                            <img src="images/Cuisine (3).webp" class="thumb" onclick="changeImage11('images/Cuisine (3).webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage12" src="images/FB (40).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/FB (40).webp" class="thumb" onclick="changeImage12('images/FB (40).webp')">
-                            <img src="images/FB (50).webp" class="thumb" onclick="changeImage12('images/FB (50).webp')">
-                            <img src="images/LES BACS DE CULTURE.webp" class="thumb" onclick="changeImage12('images/LES BACS DE CULTURE.webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                    <div>
+                <div class="split split--reverse reveal">
+                    <div class="split__body">
                         <h3>Jardiner</h3>
-
-                        <p class="text"> En suivant le rythme des saisons, ils 
-                        expérimentent les semis, plantations, 
-                        désherbage et récoltes, tout en découvrant les 
-                        pratiques d’agriculture urbaine, l’agroforesterie 
-                        et la gestion durable des ressources.
+                        <p>
+                            En suivant le rythme des saisons, les participants expérimentent les semis, plantations,
+                            désherbage et récoltes, tout en découvrant les pratiques d'agriculture urbaine,
+                            l'agroforesterie et la gestion durable des ressources.
                         </p>
-                    </div>
-                
-                    <div>
                         <h3>Cuisiner ensemble</h3>
+                        <p>
+                            Les légumes du potager et les invendus alimentaires récupérés auprès de grossistes et
+                            partenaires (MIN de Nice) sont transformés dans une démarche proactive de lutte contre le
+                            gaspillage alimentaire. Ces ateliers collectifs favorisent l'apprentissage culinaire, la
+                            convivialité et l'accès à une alimentation saine, locale et solidaire.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/FB (40).webp" width="800" height="800" alt="Bacs de culture et récoltes du potager de la ferme" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/FB (40).webp" aria-current="true" aria-label="Voir la photo : récoltes du potager"><img src="images/thumbs/FB (40).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/FB (50).webp" aria-label="Voir la photo : travail au potager"><img src="images/thumbs/FB (50).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/LES BACS DE CULTURE.webp" aria-label="Voir la photo : les bacs de culture"><img src="images/thumbs/LES BACS DE CULTURE.webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
 
-                        <p class="text">Les légumes du potager et les invendus 
-                        alimentaires récupérés auprès de grossistes et 
-                        partenaires (MIN de Nice) sont transformés 
-                        dans une démarche proactive de lutte contre le 
-                        gaspillage alimentaire. Ces ateliers collectifs 
-                        favorisent l’apprentissage culinaire, la 
-                        convivialité et l’accès à une alimentation saine, 
-                        locale et solidaire.
+                <div class="split reveal">
+                    <div class="split__body">
+                        <h3>Partager</h3>
+                        <p>
+                            Chaque récolte se termine autour d'une table. Repas participatifs, repas solidaires,
+                            visites de groupes et moments partagés avec les habitants du quartier&nbsp;: la cuisine de
+                            la ferme est le point de rencontre de toutes les générations et de toutes les cultures qui
+                            font vivre les Moulins.
+                        </p>
+                        <p>
+                            En une année, ce sont <strong>184 repas participatifs</strong> et
+                            <strong>1 800 repas solidaires et bénévoles</strong> qui ont été servis.
+                        </p>
+                    </div>
+                    <figure class="split__media gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/FB (10).webp" width="800" height="800" alt="Repas partagé dans la cuisine solidaire de la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/FB (10).webp" aria-current="true" aria-label="Voir la photo : repas partagé"><img src="images/thumbs/FB (10).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/FB (15).webp" aria-label="Voir la photo : moment convivial à la ferme"><img src="images/thumbs/FB (15).webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/visites.webp" aria-label="Voir la photo : visite de groupe à la ferme"><img src="images/thumbs/visites.webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ACTIVITÉS & PRODUITS ================= -->
+        <section id="activites" class="section section--white" aria-labelledby="activites-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Sur place</p>
+                    <h2 id="activites-title">Nos activités</h2>
+                    <p>Quatre façons de vivre la ferme, seul, en famille ou en groupe.</p>
+                </div>
+
+                <div class="cards cards--4 reveal">
+                    <article class="card">
+                        <div class="card__media"><img src="images/FB (51).webp" width="800" height="800" alt="Poules, oies et canards de la basse-cour de la Ferme Bermond" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Rencontrer nos pensionnaires</h3>
+                            <p>De la basse-cour joyeuse (poules, oies, canards, cailles) aux petits mammifères espiègles (lapins, cochons d'Inde, chiens), sans oublier nos élégants oiseaux (canaris, mandarins, perruches) et quelques poissons colorés, invertébrés et insectes qui peuplent nos bassins.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media"><img src="images/IMG_20250528_102123.webp" width="1100" height="1100" alt="Le potager de la Ferme Bermond au printemps" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Découvrir la vie du potager</h3>
+                            <p>De la plantation au semis, en passant par la récolte et la gestion des déchets verts dans notre zone de compostage ouverte à tou.te.s les habitant.e.s du quartier.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media"><img src="images/atelieram.webp" width="1100" height="1099" alt="Atelier de cuisine anti-gaspillage à la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Apprendre en s'amusant</h3>
+                            <p>Participez à nos ateliers de cuisine, où vous pourrez transformer les légumes fraîchement récoltés ou récupérés auprès de nos partenaires (MIN de Nice), dans une démarche anti-gaspillage.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media"><img src="images/animal.webp" width="1100" height="1100" alt="Visiteur prenant soin d'un animal de la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Soigner et choyer les animaux</h3>
+                            <p>Participez aux soins quotidiens de nos animaux et partagez des moments uniques avec eux.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-head reveal" style="margin-top: var(--s-9)">
+                    <p class="eyebrow">Le fruit de nos récoltes</p>
+                    <h2>Nos produits</h2>
+                </div>
+
+                <div class="cards cards--4 reveal">
+                    <article class="card">
+                        <div class="card__media"><img src="images/ratatouille-nouvelle.webp" width="367" height="367" alt="Légumes de saison récoltés à la Ferme Bermond" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Légumes et aromatiques</h3>
+                            <p>Tomates, aubergines, courgettes, concombres, blettes, poivrons, salades, et une variété d'herbes du jardin.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media"><img src="images/figuessollies1200.webp" width="900" height="900" alt="Figues fraîches cueillies à la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Fruits savoureux</h3>
+                            <p>Cerises, abricots, figues, kakis, nèfles, poires, prunes et agrumes.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media"><img src="images/Legume-tubercule-riche-en-amidon-_-le-cas-de-la-pomme-de-terre.webp" width="800" height="800" alt="Pommes de terre et tubercules cultivés à la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Tubercules et céréales</h3>
+                            <p>Pommes de terre, maïs, haricots, tournesols et amarantes.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media"><img src="images/Produit (4).webp" width="800" height="800" alt="Confitures et sirops maison de la Ferme Bermond" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Spécialités maison</h3>
+                            <p>Confitures, gelées, sirops et sauces préparés avec nos récoltes.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__media"><img src="images/ImageCarré.webp" width="800" height="800" alt="Œufs frais pondus par les poules de la ferme" loading="lazy" decoding="async"></div>
+                        <div class="card__body">
+                            <h3>Œufs frais</h3>
+                            <p>Pondus par nos poules, oies, canes et cailles, parfaits pour vos omelettes, pâtisseries, quiches ou autres recettes gourmandes.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CHIFFRES CLÉS ================= -->
+        <section id="chiffres" class="section section--deep" aria-labelledby="chiffres-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Notre impact</p>
+                    <h2 id="chiffres-title">La ferme en chiffres</h2>
+                    <p>Une année d'activité au service du quartier des Moulins et de tout le bassin niçois.</p>
+                </div>
+
+                <div class="stats reveal">
+                    <div class="stat"><span class="stat__value">4 680</span><span class="stat__label">visiteurs par an, dont 84 % d'habitants des quartiers prioritaires des Moulins et des Sagnes</span></div>
+                    <div class="stat"><span class="stat__value">3 000</span><span class="stat__label">élèves scolaires accueillis chaque année</span></div>
+                    <div class="stat"><span class="stat__value">370</span><span class="stat__label">adhérents, 17 stagiaires et 6 services civiques</span></div>
+                    <div class="stat"><span class="stat__value">4 500 <small>h</small></span><span class="stat__label">de bénévolat réalisées par 89 jeunes de 18 à 24 ans («&nbsp;Jeune Engagé pour le Climat&nbsp;»)</span></div>
+                    <div class="stat"><span class="stat__value">1 984</span><span class="stat__label">repas servis&nbsp;: 184 participatifs et 1 800 solidaires et bénévoles</span></div>
+                    <div class="stat"><span class="stat__value">6 800 <small>m²</small></span><span class="stat__label">de surface totale, dont 1 500 m² de maraîchage en plein champ</span></div>
+                    <div class="stat"><span class="stat__value">3 <small>kg/m²</small></span><span class="stat__label">de légumes récoltés par mètre carré cultivable, enrichis par une trentaine d'arbres fruitiers</span></div>
+                    <div class="stat"><span class="stat__value">200</span><span class="stat__label">animaux élevés et soignés, dont environ 60 poules pondeuses</span></div>
+                </div>
+
+                <div class="split reveal" style="margin-top: var(--s-8)">
+                    <figure class="gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/67.webp" width="800" height="800" alt="Bénévoles et visiteurs réunis à la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/67.webp" aria-current="true" aria-label="Voir la photo : bénévoles de la ferme"><img src="images/thumbs/67.webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/68.webp" aria-label="Voir la photo : moment de partage"><img src="images/thumbs/68.webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/69.webp" aria-label="Voir la photo : accueil des visiteurs"><img src="images/thumbs/69.webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                    <figure class="gallery" data-gallery>
+                        <div class="gallery__frame">
+                            <img class="gallery__main" src="images/70.webp" width="800" height="800" alt="Activités collectives dans le potager de la ferme" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__thumbs">
+                            <button type="button" class="gallery__thumb" data-full="images/70.webp" aria-current="true" aria-label="Voir la photo : activités collectives"><img src="images/thumbs/70.webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/71.webp" aria-label="Voir la photo : travaux au jardin"><img src="images/thumbs/71.webp" width="200" height="200" alt="" loading="lazy"></button>
+                            <button type="button" class="gallery__thumb" data-full="images/72.webp" aria-label="Voir la photo : vie de la ferme"><img src="images/thumbs/72.webp" width="200" height="200" alt="" loading="lazy"></button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= NOUS REJOINDRE ================= -->
+        <section id="rejoindre" class="section section--cream" aria-labelledby="rejoindre-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Nous rejoindre</p>
+                    <h2 id="rejoindre-title">Devenez adhérent&nbsp;!</h2>
+                    <p>Il existe plusieurs façons de rejoindre la ferme&nbsp;: choisissez celle qui vous convient.</p>
+                </div>
+
+                <div class="plans reveal">
+                    <article class="plan plan--featured">
+                        <span class="plan__flag">Le plus choisi</span>
+                        <div class="plan__media">
+                            <img src="images/Devenez-visiteur.webp" width="800" height="800" alt="Visiteurs découvrant la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="plan__body">
+                            <p class="plan__price">1 €<span> / adhésion symbolique</span></p>
+                            <h3>Devenez visiteur</h3>
+                            <p>Une adhésion symbolique d'1&nbsp;€ permettant l'accès à la ferme, aux repas et aux produits.</p>
+                            <button class="btn btn--primary btn--block" type="button" data-modal="modalVisiteur">Adhérer comme visiteur</button>
+                        </div>
+                    </article>
+
+                    <article class="plan">
+                        <div class="plan__media">
+                            <img src="images/Devenez-bienfaiteur.webp" width="800" height="800" alt="Soutenir la Ferme Bermond en tant que bienfaiteur" loading="lazy" decoding="async">
+                        </div>
+                        <div class="plan__body">
+                            <p class="plan__price">20 €<span> / an</span></p>
+                            <h3>Devenez bienfaiteur</h3>
+                            <p>Une adhésion annuelle de 20&nbsp;€ sans contrepartie, mais avec des tarifs réduits sur les activités de la ferme.</p>
+                            <button class="btn btn--primary btn--block" type="button" data-modal="modalBienfaiteur">Adhérer comme bienfaiteur</button>
+                        </div>
+                    </article>
+
+                    <article class="plan">
+                        <div class="plan__media">
+                            <img src="images/Devenez-benevoles.webp" width="800" height="800" alt="Bénévoles au travail à la Ferme Bermond" loading="lazy" decoding="async">
+                        </div>
+                        <div class="plan__body">
+                            <p class="plan__price">Gratuit<span> / participation régulière</span></p>
+                            <h3>Devenez bénévole</h3>
+                            <p>Une adhésion gratuite et des tarifs privilégiés en échange d'une participation régulière à l'entretien et aux activités proposées.</p>
+                            <a class="btn btn--outline btn--block" href="#visite">Nous contacter</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PRESSE ================= -->
+        <section id="nous" class="section section--white" aria-labelledby="nous-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Revue de presse</p>
+                    <h2 id="nous-title">On parle de nous</h2>
+                </div>
+
+                <div class="press reveal">
+                    <a class="press__item" href="https://www.nicematin.com/societe/vie-locale/a-nice-dans-le-quartier-sensible-des-moulins-cette-ferme-citoyenne-regale-en-circuit-court-983511" target="_blank" rel="noopener">
+                        <span class="press__logo"><img src="images/nice-matin-logo-png_seeklogo-269616.webp" width="225" height="225" alt="Logo Nice-Matin" loading="lazy"></span>
+                        <span>
+                            <span class="press__meta">Nice-Matin</span>
+                            <span class="press__title">À Nice, dans le quartier des Moulins, cette ferme citoyenne régale en circuit court</span>
+                        </span>
+                    </a>
+                    <a class="press__item" href="https://www.bfmtv.com/cote-d-azur/replay-emissions/planete-locale/planete-locale-du-10-juin-la-ferme-bermond-aux-moulins-depuis-1969_VN-202406100718.html" target="_blank" rel="noopener">
+                        <span class="press__logo"><img src="images/bfmtv-logo-vector.webp" width="475" height="477" alt="Logo BFM TV" loading="lazy"></span>
+                        <span>
+                            <span class="press__meta">BFM TV</span>
+                            <span class="press__title">Planète locale&nbsp;: la ferme Bermond aux Moulins depuis 1969</span>
+                        </span>
+                    </a>
+                    <a class="press__item" href="https://www.bfmtv.com/cote-d-azur/replay-emissions/bonjour-cote-d-azur/nice-la-ferme-urbaine-fait-peau-neuve-aux-moulins_VN-202501240179.html" target="_blank" rel="noopener">
+                        <span class="press__logo"><img src="images/bfmtv-logo-vector.webp" width="475" height="477" alt="Logo BFM TV" loading="lazy"></span>
+                        <span>
+                            <span class="press__meta">BFM TV</span>
+                            <span class="press__title">Nice&nbsp;: la ferme urbaine fait peau neuve aux Moulins</span>
+                        </span>
+                    </a>
+                    <a class="press__item" href="https://nicepresse.com/a-nice-une-ferme-en-pleine-ville-chevres-poules-lapins-et-solidarite-on-vous-fait-decouvrir-ce-lieu-unique" target="_blank" rel="noopener">
+                        <span class="press__logo"><img src="images/nicepresse_logo.webp" width="200" height="200" alt="Logo Nice Presse" loading="lazy"></span>
+                        <span>
+                            <span class="press__meta">Nice Presse</span>
+                            <span class="press__title">À Nice, une ferme en pleine ville&nbsp;! Chèvres, poules, lapins et solidarité</span>
+                        </span>
+                    </a>
+                    <a class="press__item" href="https://www.francebleu.fr/emissions/bienvenue-chez-vous-ici-azur/jardinage-et-animaux-immersion-a-la-ferme-bermond-au-coeur-des-moulins-a-nice-5394207" target="_blank" rel="noopener">
+                        <span class="press__logo"><img src="images/images.webp" width="225" height="225" alt="Logo France Bleu" loading="lazy"></span>
+                        <span>
+                            <span class="press__meta">France Bleu</span>
+                            <span class="press__title">Jardinage et animaux&nbsp;: immersion à la ferme Bermond, au cœur des Moulins à Nice</span>
+                        </span>
+                    </a>
+                    <a class="press__item" href="https://www.radiofrance.fr/francebleu/podcasts/france-bleu-azur-bienvenue-chez-vous-le-direct/la-ferme-bermont-un-oasis-de-verdure-en-plein-coeur-de-nice-2038553" target="_blank" rel="noopener">
+                        <span class="press__logo"><img src="images/Radio_France_-_2005.svg" width="120" height="120" alt="Logo Radio France" loading="lazy"></span>
+                        <span>
+                            <span class="press__meta">Radio France</span>
+                            <span class="press__title">La ferme Bermond&nbsp;: une oasis de verdure en plein cœur de Nice</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FAQ ================= -->
+        <section id="faq" class="section section--cream" aria-labelledby="faq-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Bon à savoir</p>
+                    <h2 id="faq-title">Questions fréquentes</h2>
+                </div>
+
+                <div class="faq reveal">
+                    <details class="faq__item">
+                        <summary>Où se trouve la Ferme Bermond&nbsp;?</summary>
+                        <div class="faq__answer">
+                            <p>La ferme se situe au <strong>4 boulevard Paul Montel, 06200 Nice</strong>, dans le quartier des Moulins (Nice Ouest). Elle est implantée à un carrefour stratégique, à proximité de l'aéroport, de la gare SNCF, du tramway, de la gare routière et du Marché d'Intérêt National.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Quels sont les horaires d'ouverture&nbsp;?</summary>
+                        <div class="faq__answer">
+                            <p>La ferme est ouverte <strong>du lundi au vendredi, de 9 h jusqu'à la tombée de la nuit</strong>.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Faut-il payer pour visiter la ferme&nbsp;?</summary>
+                        <div class="faq__answer">
+                            <p>L'accès se fait via une adhésion. L'adhésion <strong>visiteur</strong>, symbolique, coûte 1&nbsp;€ et donne accès à la ferme, aux repas et aux produits. L'adhésion <strong>bienfaiteur</strong> est de 20&nbsp;€ par an et ouvre droit à des tarifs réduits. L'adhésion <strong>bénévole</strong> est gratuite, en échange d'une participation régulière aux activités.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Peut-on venir en famille ou avec une classe&nbsp;?</summary>
+                        <div class="faq__answer">
+                            <p>Oui. La ferme accueille environ <strong>3 000 élèves scolaires chaque année</strong> ainsi que les familles, autour d'ateliers pédagogiques&nbsp;: découverte du potager, soin des animaux, cuisine anti-gaspillage et sensibilisation à l'environnement.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Comment devenir bénévole&nbsp;?</summary>
+                        <div class="faq__answer">
+                            <p>L'adhésion bénévole est gratuite et donne droit à des tarifs privilégiés, en échange d'une participation régulière à l'entretien du site et aux activités. Il suffit de nous écrire via le <a href="#visite">formulaire de contact</a>.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Peut-on apporter ses déchets verts pour le compostage&nbsp;?</summary>
+                        <div class="faq__answer">
+                            <p>Oui. La ferme dispose d'une <strong>zone de compostage ouverte à toutes les habitantes et à tous les habitants du quartier</strong> pour la gestion des déchets verts.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Quels produits peut-on trouver à la ferme&nbsp;?</summary>
+                        <div class="faq__answer">
+                            <p>Des légumes et aromatiques de saison, des fruits (cerises, abricots, figues, kakis, nèfles, poires, prunes, agrumes), des tubercules et céréales, des œufs frais, ainsi que des confitures, gelées, sirops et sauces préparés avec nos récoltes. <a href="#activites">Voir tous nos produits</a>.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= VISITER / CONTACT ================= -->
+        <section id="visite" class="section section--white" aria-labelledby="visite-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Venir nous voir</p>
+                    <h2 id="visite-title">Visiter la ferme</h2>
+                    <p>Une question, une visite de groupe, une envie de donner un coup de main&nbsp;? Écrivez-nous.</p>
+                </div>
+
+                <div class="contact-grid reveal">
+                    <div>
+                        <ul class="info-list">
+                            <li>
+                                <svg aria-hidden="true"><use href="#i-pin"></use></svg>
+                                <div>
+                                    <span>Adresse</span>
+                                    <address style="font-style:normal"><strong>4 boulevard Paul Montel<br>06200 Nice</strong></address>
+                                </div>
+                            </li>
+                            <li>
+                                <svg aria-hidden="true"><use href="#i-clock"></use></svg>
+                                <div>
+                                    <span>Horaires</span>
+                                    <strong>Lundi – vendredi&nbsp;: 9 h → tombée de la nuit</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <svg aria-hidden="true"><use href="#i-ticket"></use></svg>
+                                <div>
+                                    <span>Accès</span>
+                                    <strong>Adhésion visiteur à partir d'1&nbsp;€</strong>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="btn btn--gold" href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" target="_blank" rel="noopener">Soutenir la ferme par un don</a>
+                    </div>
+
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="4367c0ec-2445-412a-9f56-ae821f3f4de3">
+                        <input type="hidden" name="subject" value="Nouveau message depuis lafermebermond.com">
+                        <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="form__row">
+                            <div class="field">
+                                <label for="firstname">Prénom</label>
+                                <input type="text" name="firstname" id="firstname" autocomplete="given-name" placeholder="Marie" required>
+                            </div>
+                            <div class="field">
+                                <label for="lastname">Nom</label>
+                                <input type="text" name="lastname" id="lastname" autocomplete="family-name" placeholder="Dupont">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Adresse e-mail</label>
+                            <input type="email" name="email" id="email" autocomplete="email" placeholder="marie.dupont@exemple.fr" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" placeholder="Bonjour, je souhaiterais visiter la ferme avec ma classe…" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--block">Envoyer le message</button>
+                        <p class="form__note">Vos informations servent uniquement à vous répondre et ne sont jamais transmises à des tiers.</p>
+                    </form>
+                </div>
+
+                <div class="map-frame reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5771.717273254535!2d7.209352275658208!3d43.67190975122129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd1058e750001%3A0x5ba2b7649a1d8253!2sla%20Ferme%20Bermond!5e0!3m2!1sfr!2sfr!4v1758979172757!5m2!1sfr!2sfr"
+                        title="Localisation de la Ferme Bermond, 4 boulevard Paul Montel à Nice"
+                        loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PARTENAIRES ================= -->
+        <section id="partenaires" class="section section--cream" aria-labelledby="partenaires-title">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Ils nous soutiennent</p>
+                    <h2 id="partenaires-title">Nos partenaires</h2>
+                    <p>
+                        Nous collaborons avec des partenaires locaux pour soutenir nos initiatives et élargir notre
+                        impact. Leur soutien est essentiel pour le développement durable de nos projets.
                     </p>
-                    </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage13" src="images/FB (10).webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/FB (10).webp" class="thumb" onclick="changeImage13('images/FB (10).webp')">
-                            <img src="images/FB (15).webp" class="thumb" onclick="changeImage13('images/FB (15).webp')">
-                            <img src="images/visites.webp" class="thumb" onclick="changeImage13('images/visites.webp')">
-                        </div>
-                        
-                          
-                    </div>
-
                 </div>
+                <figure class="partners__figure reveal">
+                    <img src="images/LesPartenaires.webp" width="1400" height="989" alt="Logos des partenaires publics et privés de la Ferme Bermond" loading="lazy" decoding="async">
+                </figure>
             </div>
         </section>
 
-        <section id="activites" class="content-box">
-            <div class="container">
-
-                <div class="cardPlusBlanc">
-                    <h2>Nos Activités</h2>
-                    <div class="grid">
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/FB (51).webp" alt="animaux" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Rencontrer nos pensionnaires</h3>
-                                <h4>De la basse-cour joyeuse (poules, oies, canards, cailles) aux petits mammifères espiègles 
-                                (lapins, cochons d’Inde, chiens), sans oublier nos élégants oiseaux (canaris, mandarins, 
-                                perruches) et quelques poissons colorés, invertébrés et insectes qui peuplent nos bassins&nbsp;;</h4>
-                            </div>
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/IMG_20250528_102123.webp" alt="potager" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Découvrir la vie du potager</h3>
-                                <h4>De la plantation au semis, en passant par la récolte et la gestion des déchets verts dans 
-                                notre zone de compostage ouverte à tou.te.s les habitant.e.s du quartier.</h4>
-                            </div>
-                            
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/atelieram.webp" alt="atelier" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Apprendre en s’amusant</h3>
-                                <h4>Participez à nos ateliers de cuisine, où vous pourrez transformer les légumes fraîchement récoltés ou 
-                                récupérés auprès de nos partenaires (MIN de Nice), dans une démarche anti-gaspillage&nbsp;;</h4>
-                            </div>
-                            
-                            
-                        </div>
-
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/animal.webp" alt="animaux" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Soigner et choyer les animaux</h3>
-                                <h4>Participez aux soins quotidiens de nos animaux et partagez des moments uniques avec eux.</h4>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-
-
-                    <h2>Nos Produits</h2>
-                    <div class="grid">
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/ratatouille-nouvelle.webp" alt="légumes" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Légumes et 
-                                aromatiques</h3>
-                                <h4>Tomates, aubergines, courgettes, concombres, blettes, poivrons, 
-                                salades, et une variété d’herbes du jardin</h4>
-                            </div>
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/figuessollies1200.webp" alt="Fruits" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Fruits savoureux</h3>
-                                <h4>Cerises, abricots, figues, kakis, nèfles, poires, prunes et 
-                                agrumes</h4>
-                            </div>
-                            
-                            
-                        </div>
-                        <div class="petiteCard">
-
-                            <div>
-                                <img src="images/Legume-tubercule-riche-en-amidon-_-le-cas-de-la-pomme-de-terre.webp" alt="Tubercules" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Tubercules et céréales</h3>
-                                <h4>Pommes de terre, maïs, haricots, tournesols et amarantes</h4>
-                            </div>
-                            
-                            
-                        </div>
-
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/Produit (4).webp" alt="Confitures" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Spécialités maison</h3>
-                                <h4>Confitures, gelées, sirops et sauces préparés avec nos récoltes</h4>
-                            </div>
-                            
-                        </div>
-
-                        <div class="petiteCard">
-                            <div>
-                                <img src="images/ImageCarré.webp" alt="oeuf" class="responsive-img80">
-                            </div>
-                            <div>
-                                <h3>Œufs frais</h3>
-                                <h4>Pondus par nos poules, oies, canes et cailles, parfaits pour vos 
-                                omelettes, pâtisseries, quiches ou autres recettes gourmandes</h4>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-
-                    
-
-                </div>
-
-                
-
-            </div>
-        </section>
-
-
-        <section id="rejoindre" class="rejoindre">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Devenez Adhérent&nbsp;!</h2>
-                    <p>Il existe plusieurs façons de devenir adhérent&nbsp;: choisissez celle qui vous convient.</p><br>
-                   
-                </div>
-
-                 <!-- Conteneur de la grille -->
-                <div class="adherentGrid">
-                    <div class="adherentGrid__item adherentTrigger" data-modal="adherentModal1">
-                        <img src="images/Devenez-visiteur.webp" alt="Adhésion 1">
-                        <div class="adherentGrid__overlay">+</div>
-                        <p><strong>Devenez visiteur</strong><br><br>adhésion symbolique d’1€ permettant l’accès à la ferme, aux repas et aux produits</p>
-                    </div>
-
-                    <div class="adherentGrid__item adherentTrigger" data-modal="adherentModal2">
-                        <img src="images/Devenez-bienfaiteur.webp" alt="Adhésion 2">
-                        <div class="adherentGrid__overlay">+</div>
-                        <p><strong>Devenez bienfaiteur</strong><br><br>adhésion annuelle de 20€ sans contrepartie mais avec des tarifs réduits</p>
-                    </div>
-
-                    <div  class="adherentGrid__item">
-                        <a href="#visite">
-                            <img src="images/Devenez-benevoles.webp" alt="Devenez bénévoles">
-                            <div class="adherentGrid__overlay">+</div>
-                        </a>
-                        <p><strong>Devenez bénévoles </strong><br><br>adhésion gratuite et tarifs privilégiés en échange d’une participation régulière à l’entretien et aux activités proposées</p>
-                    </div>
-
-                </div>
-            </div>
-                
-
-                
-
-        </section>
-
-
-
-            <!-- MODAL 1 -->
-            <div class="adherentModal" id="adherentModal1">
-                <div class="adherentModal__content">
-                    <span class="adherentModal__close">&times;</span>
-
-                    <iframe id="haWidget1" allowtransparency="true" 
-                        src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/visiteur/widget"
-                        style="width: 100%; border: none;"
-                        onload="window.addEventListener('message', function(e) {
-                            const dataHeight = e.data.height;
-                            document.getElementById('haWidget1').height = dataHeight + 'px';
-                        })">
-                    </iframe>
-
-                </div>
-            </div>
-
-            <!-- MODAL 2 -->
-            <div class="adherentModal" id="adherentModal2">
-                <div class="adherentModal__content">
-                    <span class="adherentModal__close">&times;</span>
-
-                    <iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/bienfaiteur-2/widget" style="width: 100%; border: none;" onload="window.addEventListener( 'message', function(e) { const dataHeight = e.data.height; const haWidgetElement = document.getElementById('haWidget'); haWidgetElement.height = dataHeight + 'px'; } )" ></iframe>
-
-                </div>
-            </div>
-
-            <!-- MODAL 3 -->
-            <div class="adherentModal" id="adherentModal3">
-                <div class="adherentModal__content">
-                    <span class="adherentModal__close">&times;</span>
-
-                    <iframe id="haWidget3" allowtransparency="true"
-                        src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/visiteur/widget"
-                        style="width: 100%; border: none;"
-                        onload="window.addEventListener('message', function(e) {
-                            const dataHeight = e.data.height;
-                            document.getElementById('haWidget3').height = dataHeight + 'px';
-                        })">
-                    </iframe>
-
-                </div>
-            </div>
-
-
-        <section id="chiffres" class="content-box">
-            <div class="container">
-
-                <div class="cardD">
-
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage14" src="images/67.webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/67.webp" class="thumb" onclick="changeImage14('images/67.webp')">
-                            <img src="images/68.webp" class="thumb" onclick="changeImage14('images/68.webp')">
-                            <img src="images/69.webp" class="thumb" onclick="changeImage14('images/69.webp')">
-                        </div>
-                        
-                          
-                    </div>
-                    <div>
-                        <h2>La Ferme en Chiffres</h2>
-
-                        <p> 4 680 visiteurs annuels, 
-                        dont 84 % sont des 
-                        habitants des Quartiers 
-                        Prioritaires de la Ville (QPV) 
-                        des Moulins et des Sagnes&nbsp;;<br><br>
-
-                        Le dispositif départemental 
-                        «&nbsp;Jeune Engagé pour le 
-                        Climat&nbsp;» a permis à 89 
-                        jeunes âgés de 18 à 24 ans 
-                        de réaliser 4500 heures de 
-                        bénévolat&nbsp;; <br><br>
-
-                         370 adhérents 
-                        accompagnent la ferme, 
-                        ainsi que 17 stagiaires, 6 
-                        services civiques et 3 000 
-                        élèves scolaires accueillis 
-                        chaque année&nbsp;;
-
-                        </p>
-                    </div>
-
-                    
-
-                
-                    <div>
-
-                        <p>  Des ateliers participatifs et de 
-                        préapprentissage autour de 
-                        l’alimentation locale, saine et 
-                        solidaire ont permis de servir 
-                        184 repas participatifs et 1 
-                        800 repas solidaires et 
-                        bénévoles&nbsp;;<br><br>
-
-                        La ferme dispose d’une 
-                        surface totale de 6 800 m², 
-                        dont 1 500 m² sont consacrés 
-                        à un maraîchage en plein 
-                        champ, enrichis par une 
-                        trentaine d’arbres fruitiers et 
-                        une agriculture syntropique&nbsp;; <br><br>
-
-                         3kg de légumes sont récoltés 
-                        par mètre carré de surface 
-                        cultivable. La ferme élève et 
-                        soigne 200 animaux, dont 
-                        environ 60 poules pondeuses&nbsp;;
-
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <div class="image-container">
-                            <img id="mainImage15" src="images/70.webp" alt="Image principale" class="responsive-img80">
-                        </div>
-            
-                        <div class="thumbnails">
-                            <img src="images/70.webp" class="thumb" onclick="changeImage15('images/70.webp')">
-                            <img src="images/71.webp" class="thumb" onclick="changeImage15('images/71.webp')">
-                            <img src="images/72.webp" class="thumb" onclick="changeImage15('images/72.webp')">
-                        </div>
-                        
-                          
-                    </div>
-
-                </div>
-                
-            </div>
-
-        </section>
-
-    <section class="service" id="nous">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">On parle de nous!</h2>
-                
-            </div>
-
-        <div class="gridS">
-            <div class="grid__item">
-
-
-                <div class="service">
-                <div class="service__icon">
-                    <img src="images/nice-matin-logo-png_seeklogo-269616.webp" alt="NiceMatin">
-                </div>
-                <div class="service__content">
-                    <h3>NICE MATIN</h3>
-                    <a href="https://www.nicematin.com/societe/vie-locale/a-nice-dans-le-quartier-sensible-des-moulins-cette-ferme-citoyenne-regale-en-circuit-court-983511" target="_blank">À Nice, dans le quartier sensible des Moulins, cette ferme…</a>
-                </div>
-                </div>
-
-
-
-                
-                <div class="service">
-                    <div class="service__icon">
-                    <img src="images/bfmtv-logo-vector.webp" alt="BFMTV">
-                    </div>
-                    <div class="service__content">
-                        <h3>BFM TV</h3>
-                        <a href="https://www.bfmtv.com/cote-d-azur/replay-emissions/planete-locale/planete-locale-du-10-juin-la-ferme-bermond-aux-moulins-depuis-1969_VN-202406100718.html" target="_blank">Planète locale du 10 juin - La ferme Bermond aux Moulins depuis 1969.</a>
-                    </div>
-                </div>
-
-                <div class="service">
-                <div class="service__icon">
-                    <img src="images/bfmtv-logo-vector.webp" alt="BFMTV">
-                    </div>
-                <div class="service__content">
-                    <h3>BFM TV</h3>
-                    <a href="https://www.bfmtv.com/cote-d-azur/replay-emissions/bonjour-cote-d-azur/nice-la-ferme-urbaine-fait-peau-neuve-aux-moulins_VN-202501240179.html" target="_blank">Nice: la ferme urbaine fait peau neuve aux Moulins</a>
-
-                    
-                </div>
-                </div>
-
-                
-
-                <div class="service">
-                <div class="service__icon">
-                    <img src="images/nicepresse_logo.webp" alt="NicePresse">
-                    </div>
-                <div class="service__content">
-                    <h3>NICE PRESSE</h3>
-                    <a href="https://nicepresse.com/a-nice-une-ferme-en-pleine-ville-chevres-poules-lapins-et-solidarite-on-vous-fait-decouvrir-ce-lieu-unique" target="_blank">À Nice, une ferme en pleine ville&nbsp;! Chèvres, poules, lapins et solidarité… On vous fait découvrir ce lieu unique</a>
-                </div>
-                </div>
-            </div>
-
-
-            <div class="grid__item">
-
-
-
-                <div class="service">
-                    <div class="service__icon">
-                    <img src="images/images.webp" alt="FranceBleu">
-                    </div>
-                    <div class="service__content">
-                        <h3>FRANCE BLEU</h3>
-                        <a href="https://nicepresse.com/a-nice-une-ferme-en-pleine-ville-chevres-poules-lapins-et-solidarite-on-vous-fait-decouvrir-ce-lieu-unique" target="_blank">La ferme Bermond&nbsp;: une oasis de verdure en plein cœur de Nice</a>
-                    </div>
-                </div>
-
-                <div class="service">
-                    <div class="service__icon">
-                    <img src="images/images.webp" alt="FranceBleu">
-                    </div>
-                    <div class="service__content">
-                        <h3>FRANCE BLEU</h3>
-                        <a href="https://www.francebleu.fr/emissions/bienvenue-chez-vous-ici-azur/jardinage-et-animaux-immersion-a-la-ferme-bermond-au-coeur-des-moulins-a-nice-5394207" target="_blank">Jardinage et animaux&nbsp;: immersion à la ferme Bermond, au cœur des Moulins à Nice</a>
-                    </div>
-                </div>
-
-                <div class="service">
-                    <div class="service__icon">
-                    <img src="images/Radio_France_-_2005.svg" alt="RadioFrance">
-                    </div>
-                    <div class="service__content">
-                        <h3>RADIO FRANCE</h3>
-                        <a href="https://www.radiofrance.fr/francebleu/podcasts/france-bleu-azur-bienvenue-chez-vous-le-direct/la-ferme-bermont-un-oasis-de-verdure-en-plein-coeur-de-nice-2038553" target="_blank">La ferme Bermond&nbsp;: une oasis de verdure en plein cœur de Nice</a>
-                    </div>
-                </div>
-
-                
-
-                
-
-                
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-        
-
-
-        <section id="visite" class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Visiter la Ferme</h2>
-                    <div class="visit-info">
-                        <p><strong>Horaires&nbsp;:</strong> Lundi - Vendredi&nbsp;: 9h - Tombée de la nuit</p>
-                        <p><strong>Adresse&nbsp;:</strong> 4 bd. Paul Montel, 06200 Nice</p>
-
-                        
-                    </div>
-                    <h3>Pour nous contacter, envoyez-nous un message directement ci-dessous.</h3>
-
-                    <form action="https://api.web3forms.com/submit" method="POST" class="form">
-
-                    <!-- Clé API (obligatoire) -->
-                    <input type="hidden" name="access_key" value="4367c0ec-2445-412a-9f56-ae821f3f4de3">
-
-                    <!-- Anti-spam -->
-                    <input type="checkbox" name="botcheck" style="display:none;">
-
-                    <div class="form-group">
-                        <label for="firstname">Nom</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Nom" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="lastname">Prénom</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Prénom">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Message" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Envoyer</button>
-
-                </form>
-                </div>
-
-                
-
-                <div style="display: flex; justify-content: center;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5771.717273254535!2d7.209352275658208!3d43.67190975122129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd1058e750001%3A0x5ba2b7649a1d8253!2sla%20Ferme%20Bermond!5e0!3m2!1sfr!2sfr!4v1758979172757!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-
-            </div>
-        </section>
-
-
-        <section id="partenaires" class="content-box">
-            <div class="container">
-                <div class="petiteCard">
-                    <h2>Partenaires</h2>
-                    <h3>Nous collaborons avec des partenaires locaux pour soutenir nos initiatives et élargir notre
-                        impact. Leur soutien est essentiel pour le développement durable de nos projets.</h3>
-                    <img src="images/LesPartenaires.jpg" alt="Partenaires" class="responsive-img80">
-                </div>
-
-            </div>
-        </section>
-
-
-        
     </main>
 
-
-    <div class="floating-container">
-
-        <div>
-            <a href="LettreOuverte.html" target="_blank" class="floating-Lettre">
-            <img src="images/LettreOuverte.webp" alt="Logo">
-            </a>
+    <!-- ================= MODALES D'ADHÉSION ================= -->
+    <div class="modal" id="modalVisiteur" role="dialog" aria-modal="true" aria-labelledby="modalVisiteurTitle" hidden>
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" aria-label="Fermer la fenêtre">&times;</button>
+            <h2 class="modal__title" id="modalVisiteurTitle">Adhésion visiteur — 1 €</h2>
+            <iframe data-src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/visiteur/widget" title="Formulaire d'adhésion visiteur sur HelloAsso" loading="lazy"></iframe>
         </div>
-
-        <a href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" class="floating-logo" target="_blank">
-            <img src="images/logo.png" alt="Logo">
-        </a>
-
-        <a href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" class="floating-btn" target="_blank">
-            FAIRE UN DON
-        </a>
-
-        
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="social">
-                <a href="https://www.facebook.com/lafermebermond" target="_blank">
-                    <i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/channel/UCjIxEYve57O7RGvJxjgMUSw" target="_blank">
-                    <i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/la_ferme_bermond/" target="_blank">
-                    <i class="fab fa-instagram"></i></a>
+    <div class="modal" id="modalBienfaiteur" role="dialog" aria-modal="true" aria-labelledby="modalBienfaiteurTitle" hidden>
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" aria-label="Fermer la fenêtre">&times;</button>
+            <h2 class="modal__title" id="modalBienfaiteurTitle">Adhésion bienfaiteur — 20 € / an</h2>
+            <iframe data-src="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/adhesions/bienfaiteur-2/widget" title="Formulaire d'adhésion bienfaiteur sur HelloAsso" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- ================= BOUTONS FLOTTANTS ================= -->
+    <div class="floating">
+        <a class="floating__letter" href="LettreOuverte.html" aria-label="Lire la lettre ouverte aux candidats aux élections municipales de Nice 2026">
+            <img src="images/LettreOuverte.webp" width="600" height="600" alt="Lettre ouverte aux candidates et candidats aux élections municipales de Nice 2026" loading="lazy">
+        </a>
+        <a class="floating__logo" href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" target="_blank" rel="noopener" aria-label="Faire un don à La Ferme Bermond sur HelloAsso">
+            <img src="images/logo.webp" width="382" height="253" alt="Logo de La Ferme Bermond" loading="lazy">
+        </a>
+        <a class="btn btn--gold" href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" target="_blank" rel="noopener">Faire un don</a>
+    </div>
+
+    <!-- ================= PIED DE PAGE ================= -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/Texto.webp" width="600" height="225" alt="La Ferme Bermond" loading="lazy">
+                    <p>
+                        Ferme urbaine, pédagogique et solidaire au cœur du quartier des Moulins à Nice.
+                        Association «&nbsp;La Ferme Bermond – Les amis de Vincent&nbsp;», depuis 1969.
+                    </p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/lafermebermond" target="_blank" rel="noopener" aria-label="La Ferme Bermond sur Facebook"><svg aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+                        <a href="https://www.instagram.com/la_ferme_bermond/" target="_blank" rel="noopener" aria-label="La Ferme Bermond sur Instagram"><svg aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+                        <a href="https://www.youtube.com/channel/UCjIxEYve57O7RGvJxjgMUSw" target="_blank" rel="noopener" aria-label="La Ferme Bermond sur YouTube"><svg aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+                    </div>
+                </div>
+
+                <nav class="footer-col" aria-label="Découvrir la ferme">
+                    <h3>Découvrir</h3>
+                    <ul>
+                        <li><a href="#histoire">Notre histoire</a></li>
+                        <li><a href="#but">Missions &amp; vision</a></li>
+                        <li><a href="#Axe">Nos axes de travail</a></li>
+                        <li><a href="#le18">Le «&nbsp;18&nbsp;»</a></li>
+                        <li><a href="#assiete">De la terre à l'assiette</a></li>
+                        <li><a href="#chiffres">La ferme en chiffres</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col" aria-label="Participer à la vie de la ferme">
+                    <h3>Participer</h3>
+                    <ul>
+                        <li><a href="#activites">Activités &amp; produits</a></li>
+                        <li><a href="#rejoindre">Devenir adhérent</a></li>
+                        <li><a href="#visite">Visiter la ferme</a></li>
+                        <li><a href="#faq">Questions fréquentes</a></li>
+                        <li><a href="#nous">On parle de nous</a></li>
+                        <li><a href="LettreOuverte.html">Lettre ouverte 2026</a></li>
+                        <li><a href="https://www.helloasso.com/associations/la-ferme-bermond-les-amis-de-vincent/formulaires/1" target="_blank" rel="noopener">Faire un don</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col">
+                    <h3>Nous trouver</h3>
+                    <address>
+                        La Ferme Bermond<br>
+                        4 boulevard Paul Montel<br>
+                        06200 Nice, France<br><br>
+                        <strong>Lundi – vendredi</strong><br>
+                        9 h → tombée de la nuit
+                    </address>
+                </div>
             </div>
-            <p>&copy; 2025 La Ferme Bermond - Nice - Tous droits réservés</p>
+
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> La Ferme Bermond – Les amis de Vincent. Tous droits réservés.</p>
+                <p>Nice, Alpes-Maritimes · Agriculture urbaine &amp; économie sociale et solidaire</p>
+            </div>
         </div>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script src="scripts.js" defer></script>
 </body>
 
 </html>
