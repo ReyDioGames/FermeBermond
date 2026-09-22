@@ -628,7 +628,7 @@ ul {
     }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1260px) {
     .burger {
         display: block;
         order: 3;
