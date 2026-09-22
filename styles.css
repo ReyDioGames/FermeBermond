@@ -605,9 +605,20 @@ ul {
     color: #fff;
 }
 
-@media (max-width: 1100px) {
-    .nav__list a {
+@media (max-width: 1400px) {
+    .nav__list {
+        gap: 0.55rem;
+    }
+
+    .nav__list a,
+    .nav__dropdown summary {
         font-size: var(--fs-xs);
+    }
+}
+
+@media (max-width: 1100px) {
+    .site-header__inner {
+        gap: 12px;
     }
 
     .brand img {
