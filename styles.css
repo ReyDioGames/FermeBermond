@@ -417,8 +417,8 @@ ul {
 }
 
 .brand img {
-    width: 168px;
-    height: auto;
+    width: auto;
+    height: 56px;
 }
 
 .nav {
@@ -541,7 +541,7 @@ ul {
     }
 
     .brand img {
-        width: 140px;
+        height: 48px;
     }
 }
 
