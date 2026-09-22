@@ -415,35 +415,12 @@ ul {
     flex: 0 0 auto;
     display: inline-flex;
     align-items: center;
-    gap: 0.65rem;
     text-decoration: none;
 }
 
 .brand img {
     width: auto;
-    height: 44px;
-}
-
-.brand__wordmark {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-    font-family: var(--font-display);
-    white-space: nowrap;
-}
-
-.brand__line1 {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--gold-300);
-}
-
-.brand__line2 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #fff;
+    height: 62px;
 }
 
 .nav {
@@ -647,11 +624,7 @@ ul {
     }
 
     .brand img {
-        height: 40px;
-    }
-
-    .brand__line2 {
-        font-size: 1.15rem;
+        height: 52px;
     }
 }
 
