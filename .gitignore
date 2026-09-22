@@ -7,3 +7,6 @@ ftp*.txt
 # Divers
 Thumbs.db
 .DS_Store
+
+# Photos brutes non traitées (source des visuels optimisés dans images/)
+wetransfer_photos-ferme_2026-09-22_1029/
