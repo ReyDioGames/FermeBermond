@@ -78,6 +78,9 @@
     if (navLinks.length && 'IntersectionObserver' in window) {
         var linkFor = {};
         var watched = [];
+        var dropdownSummaries = Array.prototype.slice.call(
+            document.querySelectorAll('.nav__dropdown > details > summary')
+        );
 
         navLinks.forEach(function (link) {
             var id = link.getAttribute('href').slice(1);
@@ -103,10 +106,17 @@
 
             navLinks.forEach(function (l) { l.classList.remove('is-active'); });
             navLinks.forEach(function (l) { l.removeAttribute('aria-current'); });
+            dropdownSummaries.forEach(function (s) { s.classList.remove('is-active'); });
 
             if (current && linkFor[current]) {
                 linkFor[current].classList.add('is-active');
                 linkFor[current].setAttribute('aria-current', 'true');
+
+                var dropdown = linkFor[current].closest('.nav__dropdown');
+                if (dropdown) {
+                    var summary = dropdown.querySelector('summary');
+                    if (summary) summary.classList.add('is-active');
+                }
             }
         }, { rootMargin: '-80px 0px -55% 0px', threshold: 0 });
 
