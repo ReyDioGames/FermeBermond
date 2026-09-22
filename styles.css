@@ -535,6 +535,76 @@ ul {
     transform: translateY(-6px) rotate(-45deg);
 }
 
+/* — Sous-menu « Presse & infos » — */
+.nav__dropdown {
+    position: relative;
+}
+
+.nav__dropdown summary {
+    display: block;
+    padding: .5rem .15rem;
+    color: rgba(255, 255, 255, .88);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    list-style: none;
+}
+
+.nav__dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.nav__dropdown summary::after {
+    content: "";
+    display: inline-block;
+    width: .35em;
+    height: .35em;
+    margin-left: .45em;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform .2s var(--ease);
+}
+
+.nav__dropdown summary:hover {
+    color: #fff;
+}
+
+.nav__dropdown details[open] summary::after {
+    transform: rotate(-135deg) translateY(2px);
+}
+
+.nav__dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    min-width: 200px;
+    margin-top: .5rem;
+    padding: .5rem;
+    list-style: none;
+    background: var(--green-900);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: var(--r-sm);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .3);
+}
+
+.nav__dropdown ul a {
+    display: block;
+    padding: .55rem .75rem;
+    border-radius: var(--r-sm);
+    color: rgba(255, 255, 255, .88);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav__dropdown ul a:hover {
+    background: rgba(255, 255, 255, .08);
+    color: #fff;
+}
+
 @media (max-width: 1100px) {
     .nav__list a {
         font-size: var(--fs-xs);
@@ -593,6 +663,25 @@ ul {
 
     .nav__list a::after {
         display: none;
+    }
+
+    .nav__dropdown summary {
+        padding: .95rem .25rem;
+        font-size: 1rem;
+    }
+
+    .nav__dropdown ul {
+        position: static;
+        margin-top: 0;
+        padding: 0 0 .5rem var(--s-4);
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .nav__dropdown ul a {
+        padding: .75rem .25rem;
+        font-size: 1rem;
     }
 
     .nav__mobile-extra {

@@ -54,6 +54,21 @@
     }
 
     /* ----------------------------------------------------------------------
+       2bis. Sous-menu « Presse & infos » du header
+       ---------------------------------------------------------------------- */
+    Array.prototype.forEach.call(document.querySelectorAll('.nav__dropdown > details'), function (details) {
+        details.addEventListener('click', function (e) {
+            if (e.target.closest('a')) details.open = false;
+        });
+    });
+
+    document.addEventListener('click', function (e) {
+        Array.prototype.forEach.call(document.querySelectorAll('.nav__dropdown > details[open]'), function (details) {
+            if (!details.contains(e.target)) details.open = false;
+        });
+    });
+
+    /* ----------------------------------------------------------------------
        3. Lien de navigation actif (scrollspy)
        ---------------------------------------------------------------------- */
     var navLinks = Array.prototype.slice.call(
